@@ -17,6 +17,7 @@
   title: "Ghost Chips"
   content: "https://www.youtube.com/embed/IxS1ZpKDWYs"
   tag: "PSA Masterpiece"
+  duration: 68
 
 - type: "slang"
   title: "Yeah Nah"
@@ -67,6 +68,7 @@
   title: "Speights, Good on you mate"
   content: "https://www.youtube.com/embed/mdJupnWKykE?si=ck_GWxwXlN65kpbo"
   tag: "Classic Ad"
+  duration: 50
 
 - type: "rural"
   title: "No8 Wire Mentality"
@@ -97,6 +99,7 @@
   title: "Shopkeepers - Drug Driving"
   content: "https://www.youtube.com/embed/FTnnVnMvwVU?si=J0NOPHhqHTOvJTF5"
   tag: "Classic Ad"
+  duration: 98
 
 - type: "meme"
   title: "It's Constitutional"
@@ -122,6 +125,7 @@
   title: "Toyota Hilux - Bugger"
   content: "https://www.youtube.com/embed/ZUNJd06iyWU?si=Z_DHFv083e-oQqke"
   tag: "Classic Ad"
+  duration: 50
 
 - type: "fishing"
   title: "Left the Bait at Home"
@@ -157,6 +161,7 @@
   title: "Tell Me When"
   content: "https://www.youtube.com/embed/0Z0WbrtVqSY?si=ipSqLKjBK8Hlg5RH"
   tag: "Pukana"
+  duration: 45
 
 - type: "slang"
   title: "Skint"
@@ -252,6 +257,7 @@
   title: "Mitre 10 - DIY Kids"
   content: "https://www.youtube.com/embed/UT6oZqYij8U?si=yEpKgIhIrKdJCFQd"
   tag: "Classic Ad"
+  duration: 50
 
 - type: "rural"
   title: "The Possum Plucking Industry"
@@ -302,6 +308,7 @@
   title: "Telecom - Spot the Dog"
   content: "https://www.youtube.com/embed/SLbhflCzJls?si=Wm7eMe6bW3VmDyRK"
   tag: "Classic Ad"
+  duration: 68
 
 - type: "rural"
   title: "The Ag Day Lamb"
@@ -352,6 +359,7 @@
   title: "Crunchie - The Great Gold Robbery"
   content: "https://www.youtube.com/embed/A3laBRBPfQ4?si=i2a1WzY_tpHrauXk" 
   tag: "Classic Ad"
+  duration: 98
 
 - type: "rural"
   title: "The Quad Bike Dog Rider"
@@ -402,6 +410,7 @@
   title: "Instant Kiwi - Fisherman"
   content: "https://www.youtube.com/embed/a0RRUiaeMJs?si=Tu2PVhAZcaUJAPx5" 
   tag: "Classic Ad"
+  duration: 50
 
 - type: "rural"
   title: "The Hay Baling Workout"
@@ -452,6 +461,7 @@
   title: "Lotto - Wilson the Dog"
   content: "https://www.youtube.com/embed/keBVtJLGhl4?si=3IG6pggBNU4waAN3"
   tag: "Classic Ad"
+  duration: 98
 
 - type: "rural"
   title: "The Electric Fence Test"
