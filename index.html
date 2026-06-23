@@ -35,34 +35,30 @@ layout: null
 
   <div class="crt-overlay"></div>
 
-  <!-- Ambient continuous background loop -->
-  <audio id="bg-audio" loop src="{{ '/assets/audio/maorimusic.mp3' | relative_url }}"></audio>
+  <audio id="bg-audio" loop src="{{ '/assets/audio/maori-music.mp3' | relative_url }}"></audio>
   
-  <!-- Dedicated player for slide-specific sound bites -->
   <audio id="slide-audio"></audio>
 
   <div class="dashboard">
     <header>
-      <div style="font-size: 1.8rem; font-weight: bold; letter-spacing: 3px;">KIWI.AS</div>
+      <div style="font-size: 1.8rem; font-weight: bold; letter-spacing: 3px;">CHUR.BRO</div>
       <div>
-        <button class="audio-control" id="audio-toggle" onclick="toggleAudio()">🔊 AUDIO: OFF</button>
+        <button class="audio-control" id="audio-toggle" onclick="toggleAudio()">🔊 AUDIO: ON</button>
       </div>
       <div class="live-indicator">● BROADCASTING LIVE</div>
     </header>
 
     <main class="main-screen" id="display-wall">
-      <!-- Content injected by JavaScript goes here -->
-    </main>
+      </main>
 
     <footer>
-      <div>SYS_STATUS: GOOD AS GOLD</div>
+      <div>SYS_STATUS: SHE'LL BE RIGHT</div>
       <div id="countdown">LOADING CHANNEL...</div>
       <div>© 2026 OUT THE GATE ENTERTAINMENT</div>
     </footer>
   </div>
 
   <script>
-    // Build the data structure including image and custom sound attributes
     const dataWall = [
       {% for item in site.data.kiwiana %}
       {
@@ -72,7 +68,7 @@ layout: null
         tag: "{{ item.tag }}",
         image: "{{ item.image }}",
         sound: "{{ item.sound }}",
-        duration: {{ item.duration | default: 15 }}
+        duration: {{ item.duration | default: 11 }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
@@ -84,21 +80,31 @@ layout: null
     const slideAudio = document.getElementById('slide-audio');
     const audioToggleBtn = document.getElementById('audio-toggle');
     
-    const standardCycleTime = 15; 
+    const standardCycleTime = 11; 
     let currentCountdown = standardCycleTime;
     let timerInterval;
-    let isMuted = true;
+    
+    // Set default state to NOT muted (Unmuted by default)
+    let isMuted = false;
+
+    // Apply the 50% volume rules globally on setup
+    bgAudio.volume = 0.2;
+    slideAudio.volume = 0.2;
+
+    // Automatically attempt to play sound on the user's very first interaction anywhere on the screen
+    window.addEventListener('click', () => {
+      if (!isMuted && bgAudio.paused && slideAudio.paused && !crtOverlay.classList.contains('no-overlay')) {
+        bgAudio.play().catch((e) => console.log("Autoplay context initialization catch."));
+      }
+    }, { once: true }); // { once: true } ensures this event listener only runs on the very first click
 
     function toggleAudio() {
+      // Event stop propagation ensures pressing the button doesn't trigger the window listener accidently
+      event.stopPropagation(); 
+
       if (isMuted) {
         isMuted = false;
         audioToggleBtn.innerText = "🔊 AUDIO: ON";
-        
-        // Drop the master background volume down to 50%
-        bgAudio.volume = 0.2;
-        slideAudio.volume = 0.2;
-        
-        // Kick off general background audio if we're not currently running a video or unique sound
         if (!crtOverlay.classList.contains('no-overlay') && slideAudio.paused) {
           bgAudio.play().catch(() => {});
         }
@@ -112,8 +118,6 @@ layout: null
 
     function renderNextItem() {
       clearInterval(timerInterval);
-
-      // Stop any specific slide audio instantly from the previous channel selection
       slideAudio.pause();
       slideAudio.src = ""; 
 
@@ -124,7 +128,6 @@ layout: null
 
       setTimeout(() => {
         if (item.type === 'video') {
-          // If video, drop both ambient loops and slide specific sounds out completely
           bgAudio.pause();
           crtOverlay.classList.add('no-overlay');
 
@@ -138,15 +141,14 @@ layout: null
         } else {
           crtOverlay.classList.remove('no-overlay');
 
-          // Audio Routing Logic:
           if (!isMuted) {
             if (item.sound) {
-              // If this item has its own unique sound effect, pause the background track and play this instead
               bgAudio.pause();
               slideAudio.src = item.sound;
+              slideAudio.volume = 0.2;
               slideAudio.play().catch(() => {});
             } else {
-              // If it doesn't have an individual track, resume our master background soundtrack
+              bgAudio.volume = 0.2;
               bgAudio.play().catch(() => {});
             }
           }
