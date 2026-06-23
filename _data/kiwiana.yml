@@ -2,11 +2,13 @@
   title: "Chur"
   content: "Thank you, awesome, or cheers. Universal Kiwi acknowledgement."
   tag: "Lingo"
+  image: "/assets/images/chur.jpg"
 
 - type: "fact"
   title: "The Pavlova Truth"
   content: "It was invented in New Zealand in 1926 for the ballerina Anna Pavlova. Australia stole it. Case closed."
   tag: "History"
+  image: "/assets/images/pav9.jpg"
 
 - type: "meme"
   title: "Nek Minnit"
@@ -17,7 +19,7 @@
 
 - type: "video"
   title: "Ghost Chips"
-  content: "https://www.youtube.com/embed/IxS1ZpKDWYs&autoplay=1"
+  content: "https://www.youtube.com/embed/IxS1ZpKDWYs?si=rLc7qfpasgDYUcWR&autoplay=1"
   tag: "PSA Masterpiece"
   duration: 68
 
@@ -25,16 +27,12 @@
   title: "Yeah Nah"
   content: "Technically means 'no', but implies I understand your point, I just completely disagree with it."
   tag: "Logic"
+  image: "/assets/images/yeah-nah-bro.jpg"
 
 - type: "bogan"
   title: "Jandal Engineering"
   content: "Fixing a broken exhaust pipe with a piece of wire coat hanger and a piece of an old jandal."
   tag: "DIY"
-
-- type: "fact"
-  title: "The Bunnings Ritual"
-  content: "If you don't get a sausage sizzle outside Bunnings on a Saturday morning, did you even weekend?"
-  tag: "Culture"
 
 - type: "slang"
   title: "Gidday"
@@ -42,9 +40,10 @@
   tag: "Lingo"
 
 - type: "fact"
-  title: "The Buzzglen L&P"
-  content: "World Famous in New Zealand since 1907. Combining Paeroa spring water with lemon flavor to create a taste that cannot be duplicated by mere mortals."
+  title: "L&P"
+  content: "Lemon & Paeroa! World Famous in New Zealand since 1907. Combining Paeroa spring water with lemon flavor to create a taste that cannot be duplicated by mere mortals."
   tag: "Iconic Brands"
+  image: "/assets/images/l&p.jpg"
 
 - type: "meme"
   title: "Always Blow on the Pie"
@@ -96,6 +95,7 @@
   title: "The Pineapple Lump Debate"
   content: "Are they better straight out of the pantry, or frozen solid so you risk fracturing a jaw? True Kiwis know the freezer is the only answer."
   tag: "Culture"
+  image: "/assets/images/pineapplelumps.jpg"
   
 - type: "video"
   title: "Shopkeepers - Drug Driving"
@@ -105,13 +105,15 @@
 
 - type: "meme"
   title: "It's Constitutional"
-  content: "If the temperature hits 18°C, the shirts must instantly come off and the stubbies must be deployed. It's the law."
+  content: "If the temperature hits 18°C, wifebeaters come out and stubbies are deployed. It's the law."
   tag: "Rural NZ"
+  image: "/assets/images/stubbieswifebeaters.jpeg"
 
 - type: "bogan"
   title: "The Mullet Comeback"
   content: "Business up front, absolute party in the back. A hairstyle that never truly died in Hamilton, and is currently thriving nationwide."
   tag: "Style"
+  image: "/assets/images/mullet.jpg"
 
 - type: "slang"
   title: "Bro / Cuz"
@@ -134,7 +136,7 @@
   content: "Driving two hours to the boat ramp, launching the boat, getting out to the perfect spot, and realizing the squid is still in the freezer."
   tag: "Fishing Stories"
 
-- type: "Fish & Chip shop"
+- type: "The Fish & Chip shop"
   title: "The Chip Butty"
   content: "A fresh scoop of hot chips, half a block of butter, and two slices of white bread. The pinnacle of Kiwi culinary achievement."
   tag: "Culture"
@@ -148,6 +150,7 @@
   title: "The Kea: Absolute Menace"
   content: "The world's only alpine parrot. Highly intelligent, utterly lawless, and will gladly rip the rubber seals right off your car doors for fun."
   tag: "NZ Wildlife"
+  image: "/assets/images/Kea.jpg"
 
 - type: "meme"
   title: "The Thermostat Warrior"
@@ -158,6 +161,7 @@
   title: "The Holden vs Ford War"
   content: "A multi-generational blood feud fought entirely in backyard sheds and at the Bathurst 1000. Neutrality is not an option."
   tag: "Culture"
+  image: "/assets/images/holdenvsford.png"
   
 - type: "video"
   title: "Tell Me When"
@@ -172,8 +176,9 @@
 
 - type: "rural"
   title: "The Gumboots in Public Rule"
-  content: "Perfectly acceptable attire for weddings, funerals, court appearances, and doing the weekly grocery shop."
+  content: "Redbands are perfectly acceptable attire for weddings, funerals, court appearances, and doing the weekly grocery shop."
   tag: "Style"
+  image: "/assets/images/redbands.jpg"
 
 - type: "fact"
   title: "The Cheese Roll"
@@ -199,6 +204,7 @@
   title: "The Tuatara"
   content: "A literal living dinosaur hanging out on our offshore islands. Features a literal third eye on top of its head because it's just built different."
   tag: "NZ Wildlife"
+  image: "/assets/images/tuatara.png"
 
 - type: "bogan"
   title: "The Subwoofer Boot Space"
@@ -209,16 +215,19 @@
   title: "Scarfie"
   content: "A University of Otago student known for living in freezing, moldy flats and burning couches when the rugby goes well."
   tag: "Culture"
+  image: "/assets/images/scarfies.jpg"
 
 - type: "rural"
   title: "The Working Dog Whistle"
   content: "A sound so incredibly loud and high-pitched it can command a dog two valleys away, executed using only two dirty fingers."
   tag: "Rural NZ"
+  image: "/assets/images/Dogwhistle.jpg"
 
 - type: "fact"
-  title: "The Edmonds Cookery Book"
+  title: "The Edmonds Cook Book"
   content: "The literal bible of New Zealand kitchens. Found in 99% of homes, passed down through generations, covered in butter stains."
   tag: "History"
+  image: "/assets/images/edmonds.png"
 
 - type: "meme"
   title: "The Trampoline in the Wind"
@@ -239,16 +248,19 @@
   title: "The Milkshake Syrup Math"
   content: "Negotiating with the dairy owner to get four extra squirts of lime syrup in your mega long-est milkshake."
   tag: "Dairy Encounters"
+  image: "/assets/images/longestdrink.jpg"
 
 - type: "fact"
   title: "The Kākāpō"
   content: "A giant, flightless, nocturnal green parrot that smells like old honey and occasionally confuses human cameramen for potential mates."
   tag: "NZ Wildlife"
+  image: "/assets/images/kakapo.png"
 
 - type: "bogan"
   title: "The Crate Day Oath"
   content: "The sacred first Saturday of December. One crate of 745ml big-bots of beer. One day. Absolute dedication to the cause."
   tag: "Culture"
+  image: "/assets/images/crateday.png"
 
 - type: "slang"
   title: "Rattle Your Dags"
@@ -270,6 +282,7 @@
   title: "The Hokey Pokey Supremacy"
   content: "Vanilla ice cream with crunchy little golden nuggets of honeycomb. Our undisputed national ice cream champion."
   tag: "Culture"
+  image: "/assets/images/hokeypokey.jpg"
 
 - type: "meme"
   title: "The Barefoot Supermarket Run"
@@ -295,11 +308,13 @@
   title: "The Green-Blue V Fuel"
   content: "The foundational breakfast of tradies, students, and exhausted drivers across the nation. Tastes like pure green-blue energy."
   tag: "Dairy Encounters"
+  image: "/assets/images/V.png"
 
 - type: "fact"
   title: "The Wētā"
   content: "A massive, prehistoric looking insect that looks like it wants to fight you, but is actually just looking for a nice piece of rotting wood."
   tag: "NZ Wildlife"
+  image: "/assets/images/weta.jpg"
 
 - type: "slang"
   title: "Buggered"
@@ -317,11 +332,6 @@
   content: "Bringing a baby lamb into school for the day, only for it to completely lose its mind and run amok through the principal's office."
   tag: "Rural NZ"
 
-- type: "meme"
-  title: "The 100-Year-Old Towel"
-  content: "Every Kiwi bach has at least one beach towel from 1984 that is thin as paper, faded by the sun, but somehow dries you instantly."
-  tag: "Culture"
-
 - type: "fact"
   title: "The Bluff Oyster"
   content: "Harvested from the freezing waters of the Foveaux Strait. People will gladly pay extortionate amounts of cash for a dozen of these beauties."
@@ -331,6 +341,7 @@
   title: "The Primer-Paint Panel"
   content: "Driving a car where the driver's door is bright red, the hood is matte gray primer, and the rest of the car is metallic blue."
   tag: "Bogan Engineering"
+  image: "/assets/images/Bogan.jpg"
 
 - type: "slang"
   title: "Manky"
@@ -351,6 +362,7 @@
   title: "The Fantail (Pīwakawaka)"
   content: "The friendliest little bird in the bush. Will follow you around entirely to eat the bugs your boots stir up from the mud."
   tag: "NZ Wildlife"
+  image: "/assets/images/fantail.jpg"
 
 - type: "slang"
   title: "Choice"
@@ -372,6 +384,7 @@
   title: "The Long White Cloud Reality"
   content: "Aotearoa: The Land of the Long White Cloud. Which usually translates to a week of constant drizzle during your summer camping holiday."
   tag: "Culture"
+  image: "/assets/images/longwhitecloud.jpg"
 
 - type: "bogan"
   title: "The Fuzzy Dice Ritual"
@@ -382,6 +395,7 @@
   title: "The Whitebait Frenzy"
   content: "Sitting on a riverbank in a folding chair for 12 hours with a giant net, all to catch a tiny cupful of transparent fish for a patty."
   tag: "Culture"
+  image: "/assets/images/whitebait-fritter.jpg"
 
 - type: "slang"
   title: "Gutted"
@@ -397,6 +411,7 @@
   title: "The Pūkeko"
   content: "A bright blue bird with long red legs that looks like an awkward chicken and spends its entire life jaywalking across busy state highways."
   tag: "NZ Wildlife"
+  image: "/assets/images/pukeko.jpg"
 
 - type: "slang"
   title: "Mean As"
@@ -413,11 +428,13 @@
   title: "The Hay Baling Workout"
   content: "Spending a 30°C January afternoon throwing heavy, prickly square bales of hay onto a moving trailer until your arms turn red."
   tag: "Rural NZ"
+  image: "/assets/images/haybail.jpg"
 
 - type: "meme"
   title: "The Swanndri Armor"
   content: "A heavy woolen bush shirt that is completely waterproof, windproof, indestructible, and has not been washed since 1994."
   tag: "Style"
+  image: "/assets/images/swanndri.jpeg"
 
 - type: "bogan"
   title: "The Zip-Tie Bumper Fix"
@@ -428,6 +445,7 @@
   title: "The Big Carrot"
   content: "Ohakune's proudest monument. A massive 7.5-meter fiberglass carrot that reminds everyone driving past that vegetables exist."
   tag: "Culture"
+  image: "/assets/images/Ohakune.jpg"
 
 - type: "slang"
   title: "Dag"
@@ -443,11 +461,13 @@
   title: "The K Bar Challenge"
   content: "A legendary, rock-hard stick of bright pink or green candy designed specifically to extract loose fillings from your teeth."
   tag: "Dairy Encounters"
+  image: "/assets/images/kbar.jpeg"
 
 - type: "fact"
   title: "The Morepork (Ruru)"
   content: "Our native owl. Spends the midnight hours sitting in native trees loudly calling out its own name to the forest."
   tag: "NZ Wildlife"
+  image: "/assets/images/morepork.jpg"
 
 - type: "slang"
   title: "Suss"
@@ -499,6 +519,7 @@
   title: "The Giant Lemon & Paeroa Bottle"
   content: "A massive, seven-meter-high concrete soda bottle located in Paeroa. It is mandatory to stop and take a photo pretending to drink from it."
   tag: "Culture"
+  image: "/assets/images/l&p.jpg"
 
 - type: "slang"
   title: "Under the Pump"
@@ -524,6 +545,7 @@
   title: "The Raurimu Spiral"
   content: "An absolute masterpiece of engineering where a train line literally loops over itself to conquer a massive hill. Nerd paradise."
   tag: "History"
+  image: "/assets/images/Raurimu.png"
 
 - type: "slang"
   title: "Wop-Wops"
@@ -544,3 +566,4 @@
   title: "The Maui Dolphin"
   content: "The rarest marine dolphin on earth, hanging out on our West Coast. They look like little swimming remotes with round fins."
   tag: "NZ Wildlife"
+  image: "/assets/images/MauiDolphin.jpg"
