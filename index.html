@@ -8,15 +8,45 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    .slide-image {
+      max-height: 250px;
+      max-width: 100%;
+      border: 2px solid var(--neon-green);
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+    }
+    .audio-control {
+      background: transparent;
+      border: 1px solid var(--neon-green);
+      color: var(--neon-green);
+      padding: 5px 10px;
+      font-family: monospace;
+      cursor: pointer;
+      text-shadow: 0 0 5px var(--neon-green);
+    }
+    .audio-control:hover {
+      background: var(--neon-green);
+      color: var(--crt-bg);
+    }
+  </style>
 </head>
 <body>
 
   <div class="crt-overlay"></div>
 
+  <!-- Ambient continuous background loop -->
+  <audio id="bg-audio" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+  
+  <!-- Dedicated player for slide-specific sound bites -->
+  <audio id="slide-audio"></audio>
+
   <div class="dashboard">
     <header>
       <div style="font-size: 1.8rem; font-weight: bold; letter-spacing: 3px;">KIWI.AS</div>
-      <div style="font-size: 1.2rem;">"SWEET AS, BRO."</div>
+      <div>
+        <button class="audio-control" id="audio-toggle" onclick="toggleAudio()">🔊 AUDIO: OFF</button>
+      </div>
       <div class="live-indicator">● BROADCASTING LIVE</div>
     </header>
 
@@ -32,7 +62,7 @@ layout: null
   </div>
 
   <script>
-    // Convert Jekyll _data into JavaScript Array, including the optional duration
+    // Build the data structure including image and custom sound attributes
     const dataWall = [
       {% for item in site.data.kiwiana %}
       {
@@ -40,32 +70,57 @@ layout: null
         title: "{{ item.title }}",
         content: "{{ item.content }}",
         tag: "{{ item.tag }}",
-        duration: {{ item.duration | default: 11 }}
+        image: "{{ item.image }}",
+        sound: "{{ item.sound }}",
+        duration: {{ item.duration | default: 15 }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
 
-	// Grab the overlay element so we can talk to it
-    const crtOverlay = document.querySelector('.crt-overlay');
     const displayWall = document.getElementById('display-wall');
     const countdownEl = document.getElementById('countdown');
+    const crtOverlay = document.querySelector('.crt-overlay');
+    const bgAudio = document.getElementById('bg-audio');
+    const slideAudio = document.getElementById('slide-audio');
+    const audioToggleBtn = document.getElementById('audio-toggle');
     
     const standardCycleTime = 15; 
     let currentCountdown = standardCycleTime;
     let timerInterval;
+    let isMuted = true;
+
+    function toggleAudio() {
+      if (isMuted) {
+        isMuted = false;
+        audioToggleBtn.innerText = "🔊 AUDIO: ON";
+        // Kick off general background audio if we're not currently running a video or unique sound
+        if (!crtOverlay.classList.contains('no-overlay') && slideAudio.paused) {
+          bgAudio.play().catch(() => {});
+        }
+      } else {
+        isMuted = true;
+        audioToggleBtn.innerText = "🔇 AUDIO: OFF";
+        bgAudio.pause();
+        slideAudio.pause();
+      }
+    }
 
     function renderNextItem() {
       clearInterval(timerInterval);
 
+      // Stop any specific slide audio instantly from the previous channel selection
+      slideAudio.pause();
+      slideAudio.src = ""; 
+
       const item = dataWall[Math.floor(Math.random() * dataWall.length)];
       currentCountdown = item.duration ? parseInt(item.duration) : standardCycleTime;
 
-      // Fade out the main screen
       displayWall.style.opacity = 0;
 
       setTimeout(() => {
         if (item.type === 'video') {
-          // 1. Hide the CRT scanlines for high-def viewing
+          // If video, drop both ambient loops and slide specific sounds out completely
+          bgAudio.pause();
           crtOverlay.classList.add('no-overlay');
 
           displayWall.innerHTML = `
@@ -76,27 +131,37 @@ layout: null
             </div>
           `;
         } else {
-          // 2. Bring the CRT scanlines back for regular text/memes
           crtOverlay.classList.remove('no-overlay');
+
+          // Audio Routing Logic:
+          if (!isMuted) {
+            if (item.sound) {
+              // If this item has its own unique sound effect, pause the background track and play this instead
+              bgAudio.pause();
+              slideAudio.src = item.sound;
+              slideAudio.play().catch(() => {});
+            } else {
+              // If it doesn't have an individual track, resume our master background soundtrack
+              bgAudio.play().catch(() => {});
+            }
+          }
+
+          let imgHtml = item.image ? `<img src="${item.image}" class="slide-image" alt="Kiwiana content">` : '';
 
           displayWall.innerHTML = `
             <span class="content-tag">${item.tag}</span>
             <h1 class="content-title">${item.title}</h1>
+            ${imgHtml}
             <p class="content-body">"${item.content}"</p>
           `;
         }
-        // Fade main screen back in
         displayWall.style.opacity = 1;
-        
         startTimer();
       }, 400);
     }
 
     function startTimer() {
-      // Safety reset
       clearInterval(timerInterval);
-      
-      // Update text instantly on load
       countdownEl.innerText = `NEXT CHANNEL IN: ${currentCountdown}s`;
 
       timerInterval = setInterval(() => {
@@ -109,7 +174,6 @@ layout: null
       }, 1000);
     }
 
-    // Fire it up on page load
     renderNextItem();
   </script>
 </body>
