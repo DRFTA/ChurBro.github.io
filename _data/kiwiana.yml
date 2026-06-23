@@ -15,7 +15,7 @@
 
 - type: "video"
   title: "Ghost Chips"
-  content: <iframe width="785" height="441" src="https://www.youtube.com/embed/IxS1ZpKDWYs" title="Ghost Chips - NZ Anti Drink Driving Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  content: "https://www.youtube.com/embed/IxS1ZpKDWYs"
   tag: "PSA Masterpiece"
 
 - type: "slang"
