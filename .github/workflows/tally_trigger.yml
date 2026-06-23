@@ -2,7 +2,7 @@ name: Handle Tally Form Submission
 
 on:
   repository_dispatch:
-    types: [tally_submission]
+    types: [add_kiwiana_item] # Matches the event_type we set up in Make
 
 jobs:
   process_form:
@@ -10,9 +10,30 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches full history so rebasing works perfectly
 
-      - name: Read Form Data
+      - name: Append Form Data to YAML File
         run: |
-          echo "Form was submitted!"
-          echo "Payload Data: ${{ github.event.client_payload.form_data }}"
-          # Add your custom build, script, or automation logic right here
+          # Create the _data directory if it doesn't exist yet
+          mkdir -p _data
+          
+          # Write the incoming payload straight into your data file with strict YAML spacing
+          echo "" >> _data/kiwiana.yml
+          echo "- type: \"${{ github.event.client_payload.type }}\"" >> _data/kiwiana.yml
+          echo "  title: \"${{ github.event.client_payload.title }}\"" >> _data/kiwiana.yml
+          echo "  content: \"${{ github.event.client_payload.content }}\"" >> _data/kiwiana.yml
+          echo "  tag: \"${{ github.event.client_payload.tag }}\"" >> _data/kiwiana.yml
+          echo "  image: \"${{ github.event.client_payload.image }}\"" >> _data/kiwiana.yml
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Kiwiana Broadcast Bot"
+          git config --global user.email "actions@github.com"
+          git add _data/kiwiana.yml
+          git commit -m "chore: automated broadcast addition [${{ github.event.client_payload.title }}]" || echo "No changes to commit"
+          
+          # Pull down any fresh changes that happened while this ran to prevent race condition blocks
+          git pull --rebase origin main
+          
+          git push origin main
