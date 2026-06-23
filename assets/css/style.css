@@ -57,23 +57,18 @@ body, html {
 }
 
 header {
-  border-bottom: 2px solid var(--neon-green);
+  /* Add a solid dark backing bar across the header */
+  background: rgba(10, 15, 13, 0.85);
+  border: 2px solid var(--neon-green); /* Box it in to make it look clean */
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
-  
-  /* Stacked: Green glow first, followed by thick black backing layers */
-  text-shadow: 
-    0 0 10px var(--neon-green),
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-     0px  3px 5px #000;
-  
+  text-shadow: 0 0 10px var(--neon-green);
   flex-wrap: wrap;
   gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .live-indicator {
@@ -109,18 +104,14 @@ header {
 .content-title {
   font-size: 2.2rem;
   margin: 0 0 15px 0;
-  
-  /* Heavy multi-layer black shadow to isolate the text from the wallpaper graphics */
-  text-shadow: 
-    0 0 15px var(--neon-green),
-    -3px -3px 0 #000,  
-     3px -3px 0 #000,
-    -3px  3px 0 #000,
-     3px  3px 0 #000,
-     0px  4px 8px #000;
-     
+  text-shadow: 0 0 15px var(--neon-green);
   word-wrap: break-word;
   max-width: 100%;
+  
+  /* Solid black bar behind just the title */
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  border-left: 3px solid var(--neon-green); /* Cool terminal accent line */
 }
 
 .content-body {
@@ -129,13 +120,11 @@ header {
   line-height: 1.5;
   margin: 0;
   
-  /* Subtle but solid black backing so the body sentences don't get lost in the bright colors */
-  text-shadow: 
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-     0px  2px 4px #000;
+  /* Solid black bar behind the body description text */
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 20px;
+  border-left: 3px solid var(--ui-amber); /* Amber accent line to match the tags */
+  margin-top: 10px;
 }
 
 .slide-image {
@@ -176,14 +165,18 @@ iframe {
 }
 
 footer {
-  border-top: 1px dashed var(--neon-green);
+  /* Add a matching solid dark backing bar across the footer */
+  background: rgba(10, 15, 13, 0.85);
+  border: 1px solid var(--neon-green);
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.75rem;
-  padding-top: 10px;
   flex-wrap: wrap;
   gap: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @keyframes blink {
@@ -197,17 +190,18 @@ footer {
     padding: 20px;
   }
   .content-title {
-    font-size: 3.5rem; /* Massive typography back on big displays */
+    font-size: 3.5rem;
+    max-width: 850px;
   }
   .content-body {
     font-size: 1.6rem;
-    max-width: 800px;
+    max-width: 850px;
   }
   .slide-image {
     max-height: 40vh;
   }
   .video-container {
     width: 700px;
-    height: 394px; /* Hard boundaries look cleaner on wide monitors */
+    height: 394px;
   }
 }
