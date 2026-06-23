@@ -286,9 +286,50 @@ layout: null
     }
     function handleFormSubmit(e) {
       e.preventDefault();
-      alert("Submission processed! Sweets as, bro. (Connect a webhook back-end hook here to pipe this directly to your GitHub repository!)");
-      closeModal();
-      document.getElementById('kiwi-submission-form').reset();
+      
+      // 1. Grab values entered into the form inputs
+      const type = document.getElementById('form-type').value;
+      const title = document.getElementById('form-title').value;
+      const content = document.getElementById('form-content').value;
+      const tag = document.getElementById('form-tag').value;
+      const image = document.getElementById('form-image').value;
+
+      // ⚠️ REPLACE THESE TWO WITH YOUR ACTUAL DETAILS:
+      const GITHUB_USERNAME = "DRFTA";
+      const REPO_NAME = "ChurBro.github.io"; 
+      
+      // 🔐 paste your Classic Token string here
+      const TOKEN = "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"; 
+
+      // 2. Format the Payload payload
+      const payload = {
+        event_type: "add_kiwiana_item",
+        client_payload: { type, title, content, tag, image }
+      };
+
+      // 3. Shoot a POST request straight to the GitHub API
+      fetch(`https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/dispatches`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `token ${TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(response => {
+        if (response.status === 204) {
+          alert("Sweet as! Your broadcast submission has been queued up. Give GitHub a minute to compile the fresh deck.");
+          closeModal();
+          document.getElementById('kiwi-submission-form').reset();
+        } else {
+          alert("Yeah, nah, something went pear-shaped with the server connection.");
+        }
+      })
+      .catch(error => {
+        console.error("API Error:", error);
+        alert("Dropped connection to the channel grid.");
+      });
     }
 
     function renderItem(item) {
