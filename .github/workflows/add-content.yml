@@ -1,1 +1,29 @@
+name: Append Kiwiana Data
+on:
+  repository_dispatch:
+    types: [add_kiwiana_item]
 
+jobs:
+  append_data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Append data to kiwiana.yml
+        run: |
+          echo "" >> _data/kiwiana.yml
+          echo "- type: \"${{ github.event.client_payload.type }}\"" >> _data/kiwiana.yml
+          echo "  title: \"${{ github.event.client_payload.title }}\"" >> _data/kiwiana.yml
+          echo "  content: \"${{ github.event.client_payload.content }}\"" >> _data/kiwiana.yml
+          echo "  tag: \"${{ github.event.client_payload.tag }}\"" >> _data/kiwiana.yml
+          echo "  image: \"${{ github.event.client_payload.image }}\"" >> _data/kiwiana.yml
+          echo "  sound: \"\"" >> _data/kiwiana.yml
+
+      - name: Commit and Push directly back to Main Branch
+        run: |
+          git config --global user.name "Kiwiana Broadcast Bot"
+          git config --global user.email "bot@kiwi.as"
+          git add _data/kiwiana.yml
+          git commit -m "chore: automated broadcast addition [${{ github.event.client_payload.title }}]"
+          git push
