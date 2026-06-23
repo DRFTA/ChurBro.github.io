@@ -216,6 +216,12 @@
   content: "A University of Otago student known for living in freezing, moldy flats and burning couches when the rugby goes well."
   tag: "Culture"
   image: "/assets/images/scarfies.jpg"
+  
+- type: "video"
+  title: "Goodnight Kiwi 1994"
+  content: "https://www.youtube.com/embed/Qm4HYfSBe0w?si=EwF1Tz6inZA9oBgq&autoplay=1"
+  tag: "Classic Ad"
+  duration: 64  
 
 - type: "rural"
   title: "The Working Dog Whistle"
@@ -525,6 +531,12 @@
   title: "Under the Pump"
   content: "Being under massive amounts of pressure, stress, or having an absolutely insane workload to finish before knock-off time."
   tag: "Lingo"
+  
+- type: "video"
+  title: "Haka"
+  content: "https://www.youtube.com/embed/76gtc2DCtqM?si=A1q1mghagcmnNYRI&autoplay=1"
+  tag: "Maori Culture"
+  duration: 90  
 
 - type: "rural"
   title: "The Shearer's Breakfast"
