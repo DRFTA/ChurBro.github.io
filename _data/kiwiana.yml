@@ -15,7 +15,7 @@
 
 - type: "video"
   title: "Ghost Chips"
-  content: "https://www.youtube.com/embed/IxS1ZpKDWYs"
+  content: "https://www.youtube.com/embed/IxS1ZpKDWYs?autoplay=1"
   tag: "PSA Masterpiece"
   duration: 68
 
@@ -66,7 +66,7 @@
 
 - type: "video"
   title: "Speights, Good on you mate"
-  content: "https://www.youtube.com/embed/mdJupnWKykE?si=ck_GWxwXlN65kpbo"
+  content: "https://www.youtube.com/embed/mdJupnWKykE?si=ck_GWxwXlN65kpbo?autoplay=1"
   tag: "Classic Ad"
   duration: 50
 
@@ -97,7 +97,7 @@
   
 - type: "video"
   title: "Shopkeepers - Drug Driving"
-  content: "https://www.youtube.com/embed/FTnnVnMvwVU?si=J0NOPHhqHTOvJTF5"
+  content: "https://www.youtube.com/embed/FTnnVnMvwVU?si=J0NOPHhqHTOvJTF5?autoplay=1"
   tag: "Classic Ad"
   duration: 98
 
@@ -123,7 +123,7 @@
 
 - type: "video"
   title: "Toyota Hilux - Bugger"
-  content: "https://www.youtube.com/embed/ZUNJd06iyWU?si=Z_DHFv083e-oQqke"
+  content: "https://www.youtube.com/embed/ZUNJd06iyWU?si=Z_DHFv083e-oQqke?autoplay=1"
   tag: "Classic Ad"
   duration: 50
 
@@ -159,7 +159,7 @@
   
 - type: "video"
   title: "Tell Me When"
-  content: "https://www.youtube.com/embed/0Z0WbrtVqSY?si=ipSqLKjBK8Hlg5RH"
+  content: "https://www.youtube.com/embed/0Z0WbrtVqSY?si=ipSqLKjBK8Hlg5RH?autoplay=1"
   tag: "Pukana"
   duration: 45
 
@@ -255,7 +255,7 @@
 
 - type: "video"
   title: "Mitre 10 - DIY Kids"
-  content: "https://www.youtube.com/embed/UT6oZqYij8U?si=yEpKgIhIrKdJCFQd"
+  content: "https://www.youtube.com/embed/UT6oZqYij8U?si=yEpKgIhIrKdJCFQd?autoplay=1"
   tag: "Classic Ad"
   duration: 50
 
@@ -306,7 +306,7 @@
 
 - type: "video"
   title: "Telecom - Spot the Dog"
-  content: "https://www.youtube.com/embed/SLbhflCzJls?si=Wm7eMe6bW3VmDyRK"
+  content: "https://www.youtube.com/embed/SLbhflCzJls?si=Wm7eMe6bW3VmDyRK?autoplay=1"
   tag: "Classic Ad"
   duration: 68
 
@@ -357,7 +357,7 @@
 
 - type: "video"
   title: "Crunchie - The Great Gold Robbery"
-  content: "https://www.youtube.com/embed/A3laBRBPfQ4?si=i2a1WzY_tpHrauXk" 
+  content: "https://www.youtube.com/embed/A3laBRBPfQ4?si=i2a1WzY_tpHrauXk?autoplay=1" 
   tag: "Classic Ad"
   duration: 98
 
@@ -408,7 +408,7 @@
 
 - type: "video"
   title: "Instant Kiwi - Fisherman"
-  content: "https://www.youtube.com/embed/a0RRUiaeMJs?si=Tu2PVhAZcaUJAPx5" 
+  content: "https://www.youtube.com/embed/a0RRUiaeMJs?si=Tu2PVhAZcaUJAPx5?autoplay=1" 
   tag: "Classic Ad"
   duration: 50
 
@@ -459,7 +459,7 @@
 
 - type: "video"
   title: "Lotto - Wilson the Dog"
-  content: "https://www.youtube.com/embed/keBVtJLGhl4?si=3IG6pggBNU4waAN3"
+  content: "https://www.youtube.com/embed/keBVtJLGhl4?si=3IG6pggBNU4waAN3?autoplay=1"
   tag: "Classic Ad"
   duration: 98
 
