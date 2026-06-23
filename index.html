@@ -24,16 +24,55 @@ layout: null
       font-family: monospace;
       cursor: pointer;
       text-shadow: 0 0 5px var(--neon-green);
+      font-size: 0.9rem;
     }
     .audio-control:hover {
       background: var(--neon-green);
       color: var(--crt-bg);
+    }
+    
+    /* Side Navigation Buttons Styling */
+    .nav-btn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(10, 15, 13, 0.6);
+      border: 2px solid var(--neon-green);
+      color: var(--neon-green);
+      font-family: monospace;
+      font-size: 1.5rem;
+      padding: 15px 10px;
+      cursor: pointer;
+      z-index: 20;
+      text-shadow: 0 0 5px var(--neon-green);
+      box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .nav-btn:hover {
+      background: var(--neon-green);
+      color: var(--crt-bg);
+      box-shadow: 0 0 15px var(--neon-green);
+    }
+    #prev-btn { left: 10px; border-radius: 0 5px 5px 0; }
+    #next-btn { right: 10px; border-radius: 5px 0 0 5px; }
+
+    /* Hide buttons slightly on tiny screens if they overlap text */
+    @media (max-width: 480px) {
+      .nav-btn {
+        padding: 10px 5px;
+        font-size: 1.1rem;
+        background: rgba(10, 15, 13, 0.85);
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="crt-overlay"></div>
+
+  <button id="prev-btn" class="nav-btn" onclick="goBack(event)">◀</button>
+  <button id="next-btn" class="nav-btn" onclick="goForward(event)">▶</button>
 
   <audio id="bg-audio" loop src="{{ '/assets/audio/maorimusic.mp3' | relative_url }}"></audio>
   
@@ -52,7 +91,7 @@ layout: null
       </main>
 
     <footer>
-      <div>SYS_STATUS: SHE'LL BE RIGHT</div>
+      <div>SYS_STATUS: SWEET AZ BRO!</div>
       <div id="countdown">LOADING CHANNEL...</div>
       <div>© 2026 OUT THE GATE ENTERTAINMENT</div>
     </footer>
@@ -83,25 +122,35 @@ layout: null
     const standardCycleTime = 11; 
     let currentCountdown = standardCycleTime;
     let timerInterval;
-    
-    // Set default state to NOT muted (Unmuted by default)
     let isMuted = false;
 
-    // Apply the 50% volume rules globally on setup
-    bgAudio.volume = 0.2;
-    slideAudio.volume = 0.2;
+    // 🃏 THE SHUFFLE ENGINE VARIABLES
+    let shuffledDeck = [];
+    let historyStack = [];
+    let historyIndex = -1;
 
-    // Automatically attempt to play sound on the user's very first interaction anywhere on the screen
+    bgAudio.volume = 0.1;
+    slideAudio.volume = 0.1;
+
+    // Knuth-Fisher-Yates Shuffle Algorithm to perfectly randomize our deck
+    function shuffleNewDeck() {
+      // Clone the original data array so we don't mess it up
+      let deck = [...dataWall];
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+      return deck;
+    }
+
     window.addEventListener('click', () => {
       if (!isMuted && bgAudio.paused && slideAudio.paused && !crtOverlay.classList.contains('no-overlay')) {
-        bgAudio.play().catch((e) => console.log("Autoplay context initialization catch."));
+        bgAudio.play().catch(() => {});
       }
-    }, { once: true }); // { once: true } ensures this event listener only runs on the very first click
+    }, { once: true });
 
     function toggleAudio() {
-      // Event stop propagation ensures pressing the button doesn't trigger the window listener accidently
       event.stopPropagation(); 
-
       if (isMuted) {
         isMuted = false;
         audioToggleBtn.innerText = "🔊 AUDIO: ON";
@@ -116,14 +165,12 @@ layout: null
       }
     }
 
-    function renderNextItem() {
+    function renderItem(item) {
       clearInterval(timerInterval);
       slideAudio.pause();
       slideAudio.src = ""; 
 
-      const item = dataWall[Math.floor(Math.random() * dataWall.length)];
       currentCountdown = item.duration ? parseInt(item.duration) : standardCycleTime;
-
       displayWall.style.opacity = 0;
 
       setTimeout(() => {
@@ -145,10 +192,10 @@ layout: null
             if (item.sound) {
               bgAudio.pause();
               slideAudio.src = item.sound;
-              slideAudio.volume = 0.2;
+              slideAudio.volume = 0.1;
               slideAudio.play().catch(() => {});
             } else {
-              bgAudio.volume = 0.2;
+              bgAudio.volume = 0.1;
               bgAudio.play().catch(() => {});
             }
           }
@@ -167,6 +214,42 @@ layout: null
       }, 400);
     }
 
+    function renderNextItem() {
+      // 1. If we pressed 'Back' earlier, move forward through the history log first
+      if (historyIndex < historyStack.length - 1) {
+        historyIndex++;
+        renderItem(historyStack[historyIndex]);
+        return;
+      }
+
+      // 2. If our shuffled deck is empty (or it's the first run), generate a fresh shuffled deck
+      if (shuffledDeck.length === 0) {
+        shuffledDeck = shuffleNewDeck();
+      }
+
+      // 3. Pull the next unique card off the top of our shuffled deck
+      const nextItem = shuffledDeck.pop();
+      
+      // 4. Save it into our permanent sequential history tracking loop
+      historyStack.push(nextItem);
+      historyIndex++;
+      
+      renderItem(nextItem);
+    }
+
+    function goForward(event) {
+      if(event) event.stopPropagation();
+      renderNextItem();
+    }
+
+    function goBack(event) {
+      if(event) event.stopPropagation();
+      if (historyIndex > 0) {
+        historyIndex--;
+        renderItem(historyStack[historyIndex]);
+      }
+    }
+
     function startTimer() {
       clearInterval(timerInterval);
       countdownEl.innerText = `NEXT CHANNEL IN: ${currentCountdown}s`;
@@ -181,6 +264,8 @@ layout: null
       }, 1000);
     }
 
+    // Initialize the pool and fire up the first slide
+    shuffledDeck = shuffleNewDeck();
     renderNextItem();
   </script>
 </body>
