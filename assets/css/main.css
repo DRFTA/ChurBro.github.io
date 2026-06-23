@@ -1,0 +1,16 @@
+
+body{
+background:#102114;color:#f4f0e4;margin:0;
+font-family:Arial,sans-serif;text-align:center;
+overflow:hidden;
+}
+header,footer{padding:1rem}
+.brand{font-weight:bold}
+#hero{padding-top:15vh}
+#title{font-size:4rem}
+#content{font-size:1.6rem;max-width:800px;margin:auto}
+#popup{
+position:fixed;right:20px;bottom:20px;background:white;color:black;
+padding:1rem;border-radius:10px;
+}
+.hidden{display:none}
