@@ -1,0 +1,102 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <div class="crt-overlay"></div>
+
+  <div class="dashboard">
+    <header>
+      <div style="font-size: 1.8rem; font-weight: bold; letter-spacing: 3px;">KIWI.AS</div>
+      <div style="font-size: 1.2rem;">"SWEET AS, BRO."</div>
+      <div class="live-indicator">● BROADCASTING LIVE</div>
+    </header>
+
+    <main class="main-screen" id="display-wall">
+      <!-- Content injected by JavaScript goes here -->
+    </main>
+
+    <footer>
+      <div>SYS_STATUS: GOOD AS GOLD</div>
+      <div id="countdown">NEXT CHANNEL IN: 15s</div>
+      <div>© 2026 OUT THE GATE ENTERTAINMENT</div>
+    </footer>
+  </div>
+
+  <script>
+    // Seamlessly convert Jekyll _data into a JavaScript Array
+    const dataWall = [
+      {% for item in site.data.kiwiana %}
+      {
+        type: "{{ item.type }}",
+        title: "{{ item.title }}",
+        content: "{{ item.content }}",
+        tag: "{{ item.tag }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    const displayWall = document.getElementById('display-wall');
+    const countdownEl = document.getElementById('countdown');
+    
+    let cycleTime = 15; // Seconds per rotation
+    let currentCountdown = cycleTime;
+    let timerInterval;
+
+    function renderNextItem() {
+      // Pick a random item from our data array
+      const item = dataWall[Math.floor(Math.random() * dataWall.length)];
+      
+      // Fade out effect
+      displayWall.style.opacity = 0;
+
+      setTimeout(() => {
+        if (item.type === 'video') {
+          displayWall.innerHTML = `
+            <span class="content-tag">${item.tag}</span>
+            <h1 class="content-title">${item.title}</h1>
+            <div class="video-container">
+              <iframe src="${item.content}" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          `;
+        } else {
+          displayWall.innerHTML = `
+            <span class="content-tag">${item.tag}</span>
+            <h1 class="content-title">${item.title}</h1>
+            <p class="content-body">"${item.content}"</p>
+          `;
+        }
+        // Fade back in
+        displayWall.style.opacity = 1;
+      }, 400);
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      currentCountdown = cycleTime;
+      
+      timerInterval = setInterval(() => {
+        currentCountdown--;
+        countdownEl.innerText = `NEXT CHANNEL IN: ${currentCountdown}s`;
+        
+        if (currentCountdown <= 0) {
+          renderNextItem();
+          currentCountdown = cycleTime;
+        }
+      }, 1000);
+    }
+
+    // Initialize first display and start the loop
+    renderNextItem();
+    startTimer();
+  </script>
+</body>
+</html>

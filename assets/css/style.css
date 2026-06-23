@@ -1,0 +1,107 @@
+:root {
+  --neon-green: #39ff14;
+  --crt-bg: #0a0f0d;
+  --ui-amber: #ffb000;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--crt-bg);
+  color: var(--neon-green);
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* CRT Scanline Effect Overlay */
+.crt-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 6px 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Dashboard Grid Layout */
+.dashboard {
+  display: grid;
+  grid-template-rows: 60px 1fr 50px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 2px solid var(--neon-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+.live-indicator {
+  color: red;
+  animation: blink 1.5s infinite;
+}
+
+/* Main Display Screen */
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.content-tag {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: 1px solid var(--ui-amber);
+  color: var(--ui-amber);
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.content-title {
+  font-size: 3rem;
+  margin: 0 0 20px 0;
+  text-shadow: 0 0 15px var(--neon-green);
+}
+
+.content-body {
+  font-size: 1.5rem;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--neon-green);
+}
+
+footer {
+  border-top: 1px dashed var(--neon-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

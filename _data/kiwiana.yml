@@ -1,0 +1,34 @@
+- type: "slang"
+  title: "Chur"
+  content: "Thank you, awesome, or cheers. Universal Kiwi acknowledgement."
+  tag: "Lingo"
+
+- type: "fact"
+  title: "The Pavlova Truth"
+  content: "It was invented in New Zealand in 1926 for the ballerina Anna Pavlova. Australia stole it. Case closed."
+  tag: "History"
+
+- type: "meme"
+  title: "Nek Minnit"
+  content: "Left my scooter outside the dairy... nek minnit..."
+  tag: "Classic Viral"
+
+- type: "video"
+  title: "Ghost Chips"
+  content: "https://www.youtube.com/embed/dIYvD9DI1ZA?autoplay=1&mute=1"
+  tag: "PSA Masterpiece"
+
+- type: "slang"
+  title: "Yeah Nah"
+  content: "Technically means 'no', but implies I understand your point, I just completely disagree with it."
+  tag: "Logic"
+
+- type: "bogan"
+  title: "Jandal Engineering"
+  content: "Fixing a broken exhaust pipe with a piece of wire coat hanger and a piece of an old jandal."
+  tag: "DIY"
+
+- type: "fact"
+  title: "The Bunnings Ritual"
+  content: "If you don't get a sausage sizzle outside Bunnings on a Saturday morning, did you even weekend?"
+  tag: "Culture"
