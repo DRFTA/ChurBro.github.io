@@ -75,8 +75,8 @@ header {
 
 .live-indicator {
   color: red;
-  animation: blink 1.5s infinite;
-  font-size: 1.0rem;
+  animation: blink 1.8s infinite;
+  font-size: 1.5rem;
 }
 
 /* Main Display Screen */
@@ -101,6 +101,10 @@ header {
   padding: 3px 8px;
   margin-bottom: 15px;
   letter-spacing: 2px;
+  
+  /* Solid black bar behind just the title */
+  background: rgba(0, 0, 0, 0.95);
+  padding: 10px 20px;
 }
 
 .content-title {
@@ -113,7 +117,7 @@ header {
   /* Solid black bar behind just the title */
   background: rgba(0, 0, 0, 0.95);
   padding: 10px 20px;
-  border-left: 3px solid var(--neon-green); /* Cool terminal accent line */
+  border: 3px solid var(--neon-green); /* Cool terminal accent line */
 }
 
 .content-body {
@@ -125,7 +129,7 @@ header {
   /* Solid black bar behind the body description text */
   background: rgba(0, 0, 0, 0.95);
   padding: 15px 20px;
-  border-left: 3px solid var(--neon-green); /* Amber accent line to match the tags */
+  border: 3px solid var(--neon-green); /* Amber accent line to match the tags */
   margin-top: 10px;
 }
 
