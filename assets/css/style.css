@@ -62,8 +62,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
-  text-shadow: 0 0 10px var(--neon-green);
-  flex-wrap: wrap; /* Lets header wrap neatly on narrow phones */
+  
+  /* Stacked: Green glow first, followed by thick black backing layers */
+  text-shadow: 
+    0 0 10px var(--neon-green),
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+     0px  3px 5px #000;
+  
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -98,18 +107,35 @@ header {
 }
 
 .content-title {
-  font-size: 2.2rem; /* Scaled down for mobile first */
+  font-size: 2.2rem;
   margin: 0 0 15px 0;
-  text-shadow: 0 0 15px var(--neon-green);
+  
+  /* Heavy multi-layer black shadow to isolate the text from the wallpaper graphics */
+  text-shadow: 
+    0 0 15px var(--neon-green),
+    -3px -3px 0 #000,  
+     3px -3px 0 #000,
+    -3px  3px 0 #000,
+     3px  3px 0 #000,
+     0px  4px 8px #000;
+     
   word-wrap: break-word;
   max-width: 100%;
 }
 
 .content-body {
-  font-size: 1.2rem; /* Slightly tighter text for mobile reading */
+  font-size: 1.2rem;
   max-width: 100%;
   line-height: 1.5;
   margin: 0;
+  
+  /* Subtle but solid black backing so the body sentences don't get lost in the bright colors */
+  text-shadow: 
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+     0px  2px 4px #000;
 }
 
 .slide-image {
