@@ -24,6 +24,12 @@ body, html {
   background-size: 100% 4px, 6px 100%;
   z-index: 10;
   pointer-events: none;
+  transition: opacity 0.4s ease; /* Smooth transition when fading out */
+}
+
+/* New modifier class to turn off the scanlines over videos */
+.crt-overlay.no-overlay {
+  opacity: 0.05; /* Keeps a tiny hint of tint so it feels like the same app, or set to 0 for completely clean video */
 }
 
 /* Dashboard Grid Layout */
