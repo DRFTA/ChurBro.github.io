@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout Repository Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 👈 Ensures git can safely sync history
 
       - name: Append data to kiwiana.yml
         run: |
@@ -26,4 +28,8 @@ jobs:
           git config --global user.email "bot@kiwi.as"
           git add _data/kiwiana.yml
           git commit -m "chore: automated broadcast addition [${{ github.event.client_payload.title }}]"
-          git push
+          
+          # 🚀 THE FIX: Merges changes seamlessly if the repo updated while processing
+          git pull --rebase origin main
+          
+          git push origin main
