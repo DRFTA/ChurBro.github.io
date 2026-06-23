@@ -174,10 +174,32 @@ layout: null
       displayWall.style.opacity = 0;
 
       setTimeout(() => {
+        // Check if this slide has a video OR contains an image path
+        if (item.type === 'video' || item.image) {
+          // Kill the dark scanline overlay so media is crystal clear
+          crtOverlay.classList.add('no-overlay');
+        } else {
+          // Bring back the retro CRT look for text-only slang/facts
+          crtOverlay.classList.remove('no-overlay');
+        }
+
+        // Handle Audio playback rules based on types
         if (item.type === 'video') {
           bgAudio.pause();
-          crtOverlay.classList.add('no-overlay');
+        } else if (!isMuted) {
+          if (item.sound) {
+            bgAudio.pause();
+            slideAudio.src = item.sound;
+            slideAudio.volume = 0.1;
+            slideAudio.play().catch(() => {});
+          } else {
+            bgAudio.volume = 0.1;
+            bgAudio.play().catch(() => {});
+          }
+        }
 
+        // Generate the matching HTML structure
+        if (item.type === 'video') {
           displayWall.innerHTML = `
             <span class="content-tag">${item.tag}</span>
             <h1 class="content-title">${item.title}</h1>
@@ -186,20 +208,6 @@ layout: null
             </div>
           `;
         } else {
-          crtOverlay.classList.remove('no-overlay');
-
-          if (!isMuted) {
-            if (item.sound) {
-              bgAudio.pause();
-              slideAudio.src = item.sound;
-              slideAudio.volume = 0.1;
-              slideAudio.play().catch(() => {});
-            } else {
-              bgAudio.volume = 0.1;
-              bgAudio.play().catch(() => {});
-            }
-          }
-
           let imgHtml = item.image ? `<img src="${item.image}" class="slide-image" alt="Kiwiana content">` : '';
 
           displayWall.innerHTML = `
@@ -209,6 +217,7 @@ layout: null
             <p class="content-body">"${item.content}"</p>
           `;
         }
+
         displayWall.style.opacity = 1;
         startTimer();
       }, 400);
