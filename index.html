@@ -26,20 +26,21 @@ layout: null
 
     <footer>
       <div>SYS_STATUS: GOOD AS GOLD</div>
-      <div id="countdown">NEXT CHANNEL IN: 15s</div>
+      <div id="countdown">LOADING CHANNEL...</div>
       <div>© 2026 OUT THE GATE ENTERTAINMENT</div>
     </footer>
   </div>
 
   <script>
-    // Seamlessly convert Jekyll _data into a JavaScript Array
+    // Convert Jekyll _data into JavaScript Array, including the optional duration
     const dataWall = [
       {% for item in site.data.kiwiana %}
       {
         type: "{{ item.type }}",
         title: "{{ item.title }}",
         content: "{{ item.content }}",
-        tag: "{{ item.tag }}"
+        tag: "{{ item.tag }}",
+        duration: {{ item.duration | default: 15 }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
@@ -47,14 +48,20 @@ layout: null
     const displayWall = document.getElementById('display-wall');
     const countdownEl = document.getElementById('countdown');
     
-    let cycleTime = 15; // Seconds per rotation
-    let currentCountdown = cycleTime;
+    const standardCycleTime = 15; // Default for text/memes
+    let currentCountdown = standardCycleTime;
     let timerInterval;
 
     function renderNextItem() {
+      // Clear the ticking interval while we load up the next feature
+      clearInterval(timerInterval);
+
       // Pick a random item from our data array
       const item = dataWall[Math.floor(Math.random() * dataWall.length)];
       
+      // Set the countdown time based on the item config
+      currentCountdown = item.duration ? parseInt(item.duration) : standardCycleTime;
+
       // Fade out effect
       displayWall.style.opacity = 0;
 
@@ -76,27 +83,31 @@ layout: null
         }
         // Fade back in
         displayWall.style.opacity = 1;
+        
+        // Start counting down using our dynamically selected duration
+        startTimer();
       }, 400);
     }
 
     function startTimer() {
+      // Safety reset
       clearInterval(timerInterval);
-      currentCountdown = cycleTime;
       
+      // Update text instantly on load
+      countdownEl.innerText = `NEXT CHANNEL IN: ${currentCountdown}s`;
+
       timerInterval = setInterval(() => {
         currentCountdown--;
         countdownEl.innerText = `NEXT CHANNEL IN: ${currentCountdown}s`;
         
         if (currentCountdown <= 0) {
           renderNextItem();
-          currentCountdown = cycleTime;
         }
       }, 1000);
     }
 
-    // Initialize first display and start the loop
+    // Fire it up on page load
     renderNextItem();
-    startTimer();
   </script>
 </body>
 </html>
