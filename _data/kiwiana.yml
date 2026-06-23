@@ -579,3 +579,9 @@
   content: "The rarest marine dolphin on earth, hanging out on our West Coast. They look like little swimming remotes with round fins."
   tag: "NZ Wildlife"
   image: "/assets/images/MauiDolphin.jpg"
+
+- type: "fact"
+  title: "The Kiwi"
+  content: "The Kiwi is the only living bird that’s truly flightless and has nostrils at the tip of its beak, so it can breathe while mostly buried in the soil."
+  tag: "Kiwi Facts"
+  image: "https://www.doc.govt.nz/thumbs/hero/contentassets/a450e32f0b824531858d566404c21884/southern-brown-kiwi-tokoeka-stewart-island-photo-credit-alina-thiebes1920.jpg"
