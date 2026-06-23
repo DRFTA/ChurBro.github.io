@@ -98,11 +98,8 @@ header {
   text-transform: uppercase;
   border: 3px solid var(--neon-green);
   color: var(--neon-green);
-  padding: 3px 8px;
   margin-bottom: 15px;
   letter-spacing: 2px;
-  
-  /* Solid black bar behind just the title */
   background: rgba(0, 0, 0, 0.95);
   padding: 10px 20px;
 }
