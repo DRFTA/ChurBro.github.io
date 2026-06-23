@@ -45,28 +45,29 @@ layout: null
       {% endfor %}
     ];
 
+	// Grab the overlay element so we can talk to it
+    const crtOverlay = document.querySelector('.crt-overlay');
     const displayWall = document.getElementById('display-wall');
     const countdownEl = document.getElementById('countdown');
     
-    const standardCycleTime = 15; // Default for text/memes
+    const standardCycleTime = 15; 
     let currentCountdown = standardCycleTime;
     let timerInterval;
 
     function renderNextItem() {
-      // Clear the ticking interval while we load up the next feature
       clearInterval(timerInterval);
 
-      // Pick a random item from our data array
       const item = dataWall[Math.floor(Math.random() * dataWall.length)];
-      
-      // Set the countdown time based on the item config
       currentCountdown = item.duration ? parseInt(item.duration) : standardCycleTime;
 
-      // Fade out effect
+      // Fade out the main screen
       displayWall.style.opacity = 0;
 
       setTimeout(() => {
         if (item.type === 'video') {
+          // 1. Hide the CRT scanlines for high-def viewing
+          crtOverlay.classList.add('no-overlay');
+
           displayWall.innerHTML = `
             <span class="content-tag">${item.tag}</span>
             <h1 class="content-title">${item.title}</h1>
@@ -75,16 +76,18 @@ layout: null
             </div>
           `;
         } else {
+          // 2. Bring the CRT scanlines back for regular text/memes
+          crtOverlay.classList.remove('no-overlay');
+
           displayWall.innerHTML = `
             <span class="content-tag">${item.tag}</span>
             <h1 class="content-title">${item.title}</h1>
             <p class="content-body">"${item.content}"</p>
           `;
         }
-        // Fade back in
+        // Fade main screen back in
         displayWall.style.opacity = 1;
         
-        // Start counting down using our dynamically selected duration
         startTimer();
       }, 400);
     }
