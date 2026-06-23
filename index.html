@@ -57,155 +57,46 @@ layout: null
     #prev-btn { left: 10px; border-radius: 0 5px 5px 0; }
     #next-btn { right: 10px; border-radius: 5px 0 0 5px; }
 
-    /* 📌 Submission Modal Pop-up Box */
-    .modal-overlay {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 100;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-    .modal-overlay.open {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .modal-content {
-      background: var(--crt-bg);
-      border: 2px solid var(--neon-green);
-      padding: 25px;
-      width: 90%;
-      max-width: 500px;
-      box-shadow: 0 0 20px var(--neon-green);
-      font-family: monospace;
-    }
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--neon-green);
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    .close-btn {
-      background: transparent;
-      border: none;
-      color: red;
-      font-size: 1.3rem;
-      cursor: pointer;
-    }
-    .form-group {
-      margin-bottom: 15px;
-      display: flex;
-      flex-direction: column;
-    }
-    .form-group label {
-      margin-bottom: 5px;
-      color: var(--ui-amber);
-    }
-    .form-group input, .form-group select, .form-group textarea {
-      background: rgba(0,0,0,0.5);
-      border: 1px solid var(--neon-green);
-      color: var(--neon-green);
-      padding: 8px;
-      font-family: monospace;
-    }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      outline: none;
-      box-shadow: 0 0 5px var(--neon-green);
-    }
-    .submit-form-btn {
-      background: var(--neon-green);
-      color: var(--crt-bg);
-      border: none;
-      padding: 10px 15px;
-      font-family: monospace;
-      font-weight: bold;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 10px;
-    }
-    .submit-form-btn:hover {
-      box-shadow: 0 0 10px var(--neon-green);
-    }
-
     @media (max-width: 480px) {
       .nav-btn { padding: 10px 5px; font-size: 1.1rem; }
     }
   </style>
+  <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
 
   <div class="crt-overlay"></div>
 
-  <!-- Navigation Buttons -->
   <button id="prev-btn" class="nav-btn" onclick="goBack(event)">◀</button>
   <button id="next-btn" class="nav-btn" onclick="goForward(event)">▶</button>
 
-  <!-- Ambient audio tracks -->
-  <audio id="bg-audio" loop src="{{ '/assets/audio/maori-music.mp3' | relative_url }}"></audio>
+  <audio id="bg-audio" loop src="{{ '/assets/audio/maorimusic.mp3' | relative_url }}"></audio>
   <audio id="slide-audio"></audio>
-
-  <!-- 🎛️ Submission Modal Structure -->
-  <div class="modal-overlay" id="submission-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 style="margin:0; color: var(--neon-green);">📢 SUBMIT KIWIANA DATA</h3>
-        <button class="close-btn" onclick="closeModal()">✕</button>
-      </div>
-      <!-- Change the action attribute link to point to your Google Form/Tally handler when ready -->
-      <form id="kiwi-submission-form" onsubmit="handleFormSubmit(event)">
-        <div class="form-group">
-          <label>Channel Type</label>
-          <select id="form-type" required>
-            <option value="slang">Slang / Lingo</option>
-            <option value="fact">Historical Fact</option>
-            <option value="meme">Classic Meme</option>
-            <option value="rural">Rural NZ</option>
-            <option value="bogan">Bogan Culture</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Title</label>
-          <input type="text" id="form-title" placeholder="e.g., Always Blow on the Pie" required>
-        </div>
-        <div class="form-group">
-          <label>Broadcast Content / Text Description</label>
-          <textarea id="form-content" rows="3" placeholder="Write out the quote, rule, or details here..." required></textarea>
-        </div>
-        <div class="form-group">
-          <label>Category Tag</label>
-          <input type="text" id="form-tag" placeholder="e.g., Tactical Advice" required>
-        </div>
-        <div class="form-group">
-          <label>Image Link (Optional)</label>
-          <input type="text" id="form-image" placeholder="/assets/images/your-pic.jpg">
-        </div>
-        <button type="submit" class="submit-form-btn">BROADCAST SUBMISSION</button>
-      </form>
-    </div>
-  </div>
 
   <div class="dashboard">
     <header>
       <div style="font-size: 1.8rem; font-weight: bold; letter-spacing: 3px;">CHUR.BRO</div>
       <div style="display: flex; gap: 10px; align-items: center;">
-        <a href="https://tally.so/r/Pd4N0d" target="_blank" class="add-btn" style="text-decoration: none; display: inline-block;">➕ ADD CONTENT</a>
+        <button 
+          class="add-btn" 
+          data-tally-open="Pd4N0d" 
+          data-tally-layout="modal" 
+          data-tally-emoji-text="👋" 
+          data-tally-emoji-animation="wave" 
+          data-tally-auto-close="1000" 
+          data-tally-form-events-forwarding="1">
+          ➕ ADD CONTENT
+        </button>
         <button class="audio-control" id="audio-toggle" onclick="toggleAudio()">🔊 AUDIO: ON</button>
       </div>
       <div class="live-indicator">● BROADCASTING LIVE</div>
     </header>
 
     <main class="main-screen" id="display-wall">
-      <!-- Content injected by JavaScript -->
-    </main>
+      </main>
 
     <footer>
-      <div>SYS_STATUS: She'll be right</div>
+      <div>SYS_STATUS: TuMeke Cuz!</div>
       <div id="countdown">LOADING CHANNEL...</div>
       <div>© 2026 OUT THE GATE ENTERTAINMENT</div>
     </footer>
@@ -232,7 +123,6 @@ layout: null
     const bgAudio = document.getElementById('bg-audio');
     const slideAudio = document.getElementById('slide-audio');
     const audioToggleBtn = document.getElementById('audio-toggle');
-    const submissionModal = document.getElementById('submission-modal');
     
     const standardCycleTime = 11; 
     let currentCountdown = standardCycleTime;
@@ -275,61 +165,6 @@ layout: null
         bgAudio.pause();
         slideAudio.pause();
       }
-    }
-
-    // Modal Control Functions
-    function openModal() {
-      submissionModal.classList.add('open');
-    }
-    function closeModal() {
-      submissionModal.classList.remove('open');
-    }
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      
-      // 1. Grab values entered into the form inputs
-      const type = document.getElementById('form-type').value;
-      const title = document.getElementById('form-title').value;
-      const content = document.getElementById('form-content').value;
-      const tag = document.getElementById('form-tag').value;
-      const image = document.getElementById('form-image').value;
-
-      // ⚠️ REPLACE THESE TWO WITH YOUR ACTUAL DETAILS:
-      const GITHUB_USERNAME = "DRFTA";
-      const REPO_NAME = "ChurBro.github.io"; 
-      
-      // 🔐 paste your Classic Token string here
-      const TOKEN = "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"; 
-
-      // 2. Format the Payload payload
-      const payload = {
-        event_type: "add_kiwiana_item",
-        client_payload: { type, title, content, tag, image }
-      };
-
-      // 3. Shoot a POST request straight to the GitHub API
-      fetch(`https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/dispatches`, {
-        method: 'POST',
-        headers: {
-          'Authorization': `token ${TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      })
-      .then(response => {
-        if (response.status === 204) {
-          alert("Sweet as! Your broadcast submission has been queued up. Give GitHub a minute to compile the fresh deck.");
-          closeModal();
-          document.getElementById('kiwi-submission-form').reset();
-        } else {
-          alert("Yeah, nah, something went pear-shaped with the server connection.");
-        }
-      })
-      .catch(error => {
-        console.error("API Error:", error);
-        alert("Dropped connection to the channel grid.");
-      });
     }
 
     function renderItem(item) {
