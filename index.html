@@ -95,8 +95,8 @@ layout: null
         audioToggleBtn.innerText = "🔊 AUDIO: ON";
         
         // Drop the master background volume down to 50%
-        bgAudio.volume = 0.5;
-        slideAudio.volume = 0.5;
+        bgAudio.volume = 0.2;
+        slideAudio.volume = 0.2;
         
         // Kick off general background audio if we're not currently running a video or unique sound
         if (!crtOverlay.classList.contains('no-overlay') && slideAudio.paused) {
