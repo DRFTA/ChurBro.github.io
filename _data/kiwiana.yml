@@ -32,3 +32,510 @@
   title: "The Bunnings Ritual"
   content: "If you don't get a sausage sizzle outside Bunnings on a Saturday morning, did you even weekend?"
   tag: "Culture"
+
+- type: "slang"
+  title: "Gidday"
+  content: "The ultimate Kiwi greeting. Best delivered with a slight nod of the head and absolute confidence."
+  tag: "Lingo"
+
+- type: "fact"
+  title: "The Buzzglen L&P"
+  content: "World Famous in New Zealand since 1907. Combining Paeroa spring water with lemon flavor to create a taste that cannot be duplicated by mere mortals."
+  tag: "Iconic Brands"
+
+- type: "meme"
+  title: "Always Blow on the Pie"
+  content: "Safer Communities Together. An absolute masterclass in tactical food safety advice from a legendary NZ police officer."
+  tag: "Classic Viral"
+
+- type: "bogan"
+  title: "The No-Wheels Burnout"
+  content: "Who needs rear tires on a Holden Commodore when the bare metal rims make brighter sparks on the asphalt anyway?"
+  tag: "Bogan Engineering"
+
+- type: "fact"
+  title: "The Mighty Jandal"
+  content: "Our national footwear. If you aren't wearing them to a black-tie event, a funeral, or a mid-winter supermarket run, you're doing it wrong."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Sweet As"
+  content: "Everything is awesome, fine, or completely sorted. Can be appended to any sentence to instantly chill the vibe."
+  tag: "Lingo"
+
+- type: "video"
+  title: "Speights, Good on you mate"
+  content: "https://www.youtube.com/embed/mdJupnWKykE?si=ck_GWxwXlN65kpbo"
+  tag: "Classic Ad"
+
+- type: "rural"
+  title: "No8 Wire Mentality"
+  content: "The legendary belief that any complex mechanical, structural, or emotional problem can be solved using nothing but a piece of fencing wire."
+  tag: "DIY"
+
+- type: "fishing"
+  title: "The 'Yeah It's Legal' Snapper"
+  content: "Holding the fish exactly two inches from the camera lens so a 28cm legal-minimum snapper looks like a 10kg monster."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The $2 Mix"
+  content: "Going into the local dairy with a gold coin and walking out with a paper bag heavy enough to cause dental damage."
+  tag: "Dairy Encounters"
+
+- type: "slang"
+  title: "Hard Case"
+  content: "A person who is inherently hilarious, eccentric, or just a bit of a character. 'Old mate down the road is a hard case.'"
+  tag: "Lingo"
+
+- type: "fact"
+  title: "The Pineapple Lump Debate"
+  content: "Are they better straight out of the pantry, or frozen solid so you risk fracturing a jaw? True Kiwis know the freezer is the only answer."
+  tag: "Culture"
+  
+- type: "video"
+  title: "Shopkeepers - Drug Driving"
+  content: "https://www.youtube.com/embed/FTnnVnMvwVU?si=J0NOPHhqHTOvJTF5"
+  tag: "Classic Ad"
+
+- type: "meme"
+  title: "It's Constitutional"
+  content: "If the temperature hits 18°C, the shirts must instantly come off and the stubbies must be deployed. It's the law."
+  tag: "Rural NZ"
+
+- type: "bogan"
+  title: "The Mullet Comeback"
+  content: "Business up front, absolute party in the back. A hairstyle that never truly died in Hamilton, and is currently thriving nationwide."
+  tag: "Style"
+
+- type: "slang"
+  title: "Bro / Cuz"
+  content: "Your brother, your cousin, your best mate, or a complete stranger you just met in the KFC drive-thru line."
+  tag: "Lingo"
+
+- type: "fact"
+  title: "The Taranaki Gate"
+  content: "A masterclass in rural design: three strands of barbed wire, a couple of sticks, and a loop of wire. Simple, elegant, utterly infuriating to close."
+  tag: "Rural NZ"
+
+- type: "video"
+  title: "Toyota Hilux - Bugger"
+  content: "https://www.youtube.com/embed/ZUNJd06iyWU?si=Z_DHFv083e-oQqke"
+  tag: "Classic Ad"
+
+- type: "fishing"
+  title: "Left the Bait at Home"
+  content: "Driving two hours to the boat ramp, launching the boat, getting out to the perfect spot, and realizing the squid is still in the freezer."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The Hot Chip Sandwich"
+  content: "A fresh scoop of dairy chips, half a block of butter, and two slices of white bread. The pinnacle of Kiwi culinary achievement."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Chocka"
+  content: "Completely full. Whether it's the boot of the car, your stomach after a hangi, or the local pub on a Friday night."
+  tag: "Lingo"
+
+- type: "fact"
+  title: "The Kea: Absolute Menace"
+  content: "The world's only alpine parrot. Highly intelligent, utterly lawless, and will gladly rip the rubber seals right off your car doors for fun."
+  tag: "NZ Wildlife"
+
+- type: "meme"
+  title: "The Thermostat Warrior"
+  content: "Refusing to turn on the heat pump in mid-July because 'you just need to put another polar fleece jersey on, mate.'"
+  tag: "Culture"
+
+- type: "bogan"
+  title: "The Holden vs Ford War"
+  content: "A multi-generational blood feud fought entirely in backyard sheds and at the Bathurst 1000. Neutrality is not an option."
+  tag: "Culture"
+  
+- type: "video"
+  title: "Tell Me When"
+  content: "https://www.youtube.com/embed/0Z0WbrtVqSY?si=ipSqLKjBK8Hlg5RH"
+  tag: "Pukana"
+
+- type: "slang"
+  title: "Skint"
+  content: "Having absolutely zero money left in your account until payday hits on Wednesday night."
+  tag: "Lingo"
+
+- type: "rural"
+  title: "The Gumboots in Public Rule"
+  content: "Perfectly acceptable attire for weddings, funerals, court appearances, and doing the weekly grocery shop."
+  tag: "Style"
+
+- type: "fact"
+  title: "The Cheese Roll"
+  content: "The 'Southland Sushi'. A delicate delicacy of white bread, processed cheese, and onion soup mix. Do not insult it."
+  tag: "Culture"
+
+- type: "fishing"
+  title: "The Kahawai Disappointment"
+  content: "Reeling in what feels like a massive world-record snapper, only to realize it's just a highly energetic Kahawai."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "Pie Heat Expectations"
+  content: "The true lottery of the dairy pie warmer. Will it be ice cold in the middle, or the temperature of molten lava? There is no between."
+  tag: "Dairy Encounters"
+
+- type: "slang"
+  title: "Tiki Tour"
+  content: "Taking the longest, most scenic route possible to a destination, usually because you missed the turnoff three towns ago."
+  tag: "Lingo"
+
+- type: "fact"
+  title: "The Tuatara"
+  content: "A literal living dinosaur hanging out on our offshore islands. Features a literal third eye on top of its head because it's just built different."
+  tag: "NZ Wildlife"
+
+- type: "bogan"
+  title: "The Subwoofer Boot Space"
+  content: "Sacrificing 100% of your car's trunk space to install a subwoofer that makes the entire license plate rattle like crazy."
+  tag: "Bogan Engineering"
+
+- type: "slang"
+  title: "Scarfie"
+  content: "A University of Otago student known for living in freezing, moldy flats and burning couches when the rugby goes well."
+  tag: "Culture"
+
+- type: "rural"
+  title: "The Working Dog Whistle"
+  content: "A sound so incredibly loud and high-pitched it can command a dog two valleys away, executed using only two dirty fingers."
+  tag: "Rural NZ"
+
+- type: "fact"
+  title: "The Edmonds Cookery Book"
+  content: "The literal bible of New Zealand kitchens. Found in 99% of homes, passed down through generations, covered in butter stains."
+  tag: "History"
+
+- type: "meme"
+  title: "The Trampoline in the Wind"
+  content: "A classic Kiwi spring tradition where your neighbor's trampoline magically migrates over a two-meter fence into your garden."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Pack a Sad"
+  content: "To throw a massive tantrum, become utterly grumpy, or when a piece of machinery completely gives up on life."
+  tag: "Lingo"
+
+- type: "fishing"
+  title: "The Kingfish Battle"
+  content: "Fighting a massive Kingie around a reef for forty minutes, only for a shark to turn up and leave you with just a fish head."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The Milkshake Syrup Math"
+  content: "Negotiating with the dairy owner to get four extra squirts of lime syrup in your mega long-est milkshake."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Kākāpō"
+  content: "A giant, flightless, nocturnal green parrot that smells like old honey and occasionally confuses human cameramen for potential mates."
+  tag: "NZ Wildlife"
+
+- type: "bogan"
+  title: "The Crate Day Oath"
+  content: "The sacred first Saturday of December. One crate of 745ml big-bots of beer. One day. Absolute dedication to the cause."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Rattle Your Dags"
+  content: "Hurry up! Get a move on! Derived from the lovely aesthetic of sheep wool clacking together when they run."
+  tag: "Lingo"
+
+- type: "video"
+  title: "Mitre 10 - DIY Kids"
+  content: "https://www.youtube.com/embed/UT6oZqYij8U?si=yEpKgIhIrKdJCFQd"
+  tag: "Classic Ad"
+
+- type: "rural"
+  title: "The Possum Plucking Industry"
+  content: "A very specific rural side-hustle where clearing pests turns into a lucrative cashmere-blend fashion statement."
+  tag: "Rural NZ"
+
+- type: "fact"
+  title: "The Hokey Pokey Supremacy"
+  content: "Vanilla ice cream with crunchy little golden nuggets of honeycomb. Our undisputed national ice cream champion."
+  tag: "Culture"
+
+- type: "meme"
+  title: "The Barefoot Supermarket Run"
+  content: "Walking completely barefoot through a freezing cold supermarket in mid-winter. Concrete floors mean nothing to Kiwi feet."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Stoked"
+  content: "Absolutely overjoyed, thrilled, or deeply satisfied with an outcome. 'Stoked with that catch, mate.'"
+  tag: "Lingo"
+
+- type: "bogan"
+  title: "The Custom Exhaust Pipe"
+  content: "Taking a perfectly quiet Japanese hatchback and welding a 4-inch chrome tip onto it so it sounds like a very angry lawnmower."
+  tag: "Bogan Engineering"
+
+- type: "fishing"
+  title: "The Secret Spot Myth"
+  content: "Telling your best mate exactly where you caught the big ones, but deliberately giving him coordinates 5 kilometers off target."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The Blue V Fuel"
+  content: "The foundational breakfast of tradies, students, and exhausted drivers across the nation. Tastes like pure green-blue energy."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Wētā"
+  content: "A massive, prehistoric looking insect that looks like it wants to fight you, but is actually just looking for a nice piece of rotting wood."
+  tag: "NZ Wildlife"
+
+- type: "slang"
+  title: "Buggered"
+  content: "Either completely exhausted after a hard day's work, or a piece of equipment that is broken beyond any hope of repair."
+  tag: "Lingo"
+
+- type: "video"
+  title: "Telecom - Spot the Dog"
+  content: "https://www.youtube.com/embed/SLbhflCzJls?si=Wm7eMe6bW3VmDyRK"
+  tag: "Classic Ad"
+
+- type: "rural"
+  title: "The Ag Day Lamb"
+  content: "Bringing a baby lamb into school for the day, only for it to completely lose its mind and run amok through the principal's office."
+  tag: "Rural NZ"
+
+- type: "meme"
+  title: "The 100-Year-Old Towel"
+  content: "Every Kiwi bach has at least one beach towel from 1984 that is thin as paper, faded by the sun, but somehow dries you instantly."
+  tag: "Culture"
+
+- type: "fact"
+  title: "The Bluff Oyster"
+  content: "Harvested from the freezing waters of the Foveaux Strait. People will gladly pay extortionate amounts of cash for a dozen of these beauties."
+  tag: "Culture"
+
+- type: "bogan"
+  title: "The Primer-Paint Panel"
+  content: "Driving a car where the driver's door is bright red, the hood is matte gray primer, and the rest of the car is metallic blue."
+  tag: "Bogan Engineering"
+
+- type: "slang"
+  title: "Manky"
+  content: "Something incredibly dirty, disgusting, slimy, or generally unpleasant to look at or touch."
+  tag: "Lingo"
+
+- type: "fishing"
+  title: "The Surfcasting Rogue Wave"
+  content: "Standing on a rock ledge completely focused on your line, right until a massive swell catches you completely unawares and fills your waders."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The Sausage Roll Ketchup Technique"
+  content: "Biting the corner off a plastic tomato sauce packet and expertly injecting the entire contents directly inside the pastry shell."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Fantail (Pīwakawaka)"
+  content: "The friendliest little bird in the bush. Will follow you around entirely to eat the bugs your boots stir up from the mud."
+  tag: "NZ Wildlife"
+
+- type: "slang"
+  title: "Choice"
+  content: "Excellent, great, or an expression of absolute agreement. 'That's choice, bro.'"
+  tag: "Lingo"
+
+- type: "video"
+  title: "Crunchie - The Great Gold Robbery"
+  content: "https://www.youtube.com/embed/A3laBRBPfQ4?si=i2a1WzY_tpHrauXk" 
+  tag: "Classic Ad"
+
+- type: "rural"
+  title: "The Quad Bike Dog Rider"
+  content: "A farm dog standing perfectly balanced on the back of a moving quad bike, leaning into the corners like a pro MotoGP racer."
+  tag: "Rural NZ"
+
+- type: "meme"
+  title: "The Long White Cloud Reality"
+  content: "Aotearoa: The Land of the Long White Cloud. Which usually translates to a week of constant drizzle during your summer camping holiday."
+  tag: "Culture"
+
+- type: "bogan"
+  title: "The Fuzzy Dice Ritual"
+  content: "Hanging a massive pair of neon pink fuzzy dice from the rearview mirror to instantly increase your car's value by fifty bucks."
+  tag: "Style"
+
+- type: "fact"
+  title: "The Whitebait Frenzy"
+  content: "Sitting on a riverbank in a folding chair for 12 hours with a giant net, all to catch a tiny cupful of transparent fish for a patty."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Gutted"
+  content: "Deeply disappointed or heartbroken about something. 'Absolutely gutted about the rugby score last night.'"
+  tag: "Lingo"
+
+- type: "fishing"
+  title: "The Anchor Tangle"
+  content: "An inevitable team-building disaster where the anchor rope knots itself into a perfect Rubik's cube beneath the anchor chain."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The Tip Top Sign"
+  content: "The universal beacon of safety. Seeing that classic dairy sign from 2 kilometers down a rural highway means food is near."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Pūkeko"
+  content: "A bright blue bird with long red legs that looks like an awkward chicken and spends its entire life jaywalking across busy state highways."
+  tag: "NZ Wildlife"
+
+- type: "slang"
+  title: "Mean As"
+  content: "Incredibly cool, high quality, or visually spectacular. Despite using 'mean', it is 100% a compliment."
+  tag: "Lingo"
+
+- type: "video"
+  title: "Instant Kiwi - Fisherman"
+  content: "https://www.youtube.com/embed/a0RRUiaeMJs?si=Tu2PVhAZcaUJAPx5" 
+  tag: "Classic Ad"
+
+- type: "rural"
+  title: "The Hay Baling Workout"
+  content: "Spending a 30°C January afternoon throwing heavy, prickly square bales of hay onto a moving trailer until your arms turn red."
+  tag: "Rural NZ"
+
+- type: "meme"
+  title: "The Swanndri Armor"
+  content: "A heavy woolen bush shirt that is completely waterproof, windproof, indestructible, and has not been washed since 1994."
+  tag: "Style"
+
+- type: "bogan"
+  title: "The Zip-Tie Bumper Fix"
+  content: "When a drift session goes wrong, stitching your front bumper back together using 40 interlocking plastic zip-ties like surgical sutures."
+  tag: "Bogan Engineering"
+
+- type: "fact"
+  title: "The Big Carrot"
+  content: "Ohakune's proudest monument. A massive 7.5-meter fiberglass carrot that reminds everyone driving past that vegetables exist."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Dag"
+  content: "A funny, amusing, or slightly strange person. 'He's a bit of a dag, that one.'"
+  tag: "Lingo"
+
+- type: "fishing"
+  title: "The Sea Sickness Denial"
+  content: "Turning completely green, leaning over the side of the boat, but loudly insisting to the crew that you 'just had a bad pie'."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The K Bar Challenge"
+  content: "A legendary, rock-hard stick of bright pink or green candy designed specifically to extract loose fillings from your teeth."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Morepork (Ruru)"
+  content: "Our native owl. Spends the midnight hours sitting in native trees loudly calling out its own name to the forest."
+  tag: "NZ Wildlife"
+
+- type: "slang"
+  title: "Suss"
+  content: "Suspicious, untrustworthy, or something that doesn't quite look right. 'That deal looks a bit suss, bro.'"
+  tag: "Lingo"
+
+- type: "video"
+  title: "Lotto - Wilson the Dog"
+  content: "https://www.youtube.com/embed/keBVtJLGhl4?si=3IG6pggBNU4waAN3"
+  tag: "Classic Ad"
+
+- type: "rural"
+  title: "The Electric Fence Test"
+  content: "Conning your city slicker cousin into holding a blade of grass against an active livestock wire just to see him jump."
+  tag: "Rural NZ"
+
+- type: "meme"
+  title: "The Bach Toilet Map"
+  content: "Navigating out to the long-drop toilet at 2:00 AM using nothing but a fading phone light while actively avoiding giant spiders."
+  tag: "Culture"
+
+- type: "bogan"
+  title: "The Tape Deck Aux Cord"
+  content: "Using a mechanical cassette tape adapter with a wire hanging out of it to play modern tunes through a 1989 stereo head unit."
+  tag: "Bogan Engineering"
+
+- type: "fact"
+  title: "The Hundertwasser Toilets"
+  content: "Kawakawa's main tourist attraction: a public toilet block built out of recycled bottles and wavy tiles. Truly avant-garde relief."
+  tag: "History"
+
+- type: "slang"
+  title: "Scrag"
+  content: "To grab someone roughly by the collar, or a slightly unkempt look. 'He got scragged in the tackle.'"
+  tag: "Lingo"
+
+- type: "fishing"
+  title: "The Dogfish Curse"
+  content: "Dropping your line down to a beautiful deep reef, only to catch six useless, sandpaper-skinned dogfish in a row."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The Ice Cream Scoop Politics"
+  content: "Judging a dairy solely based on how aggressively the worker packs the ice cream down into the cone for a single scoop."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Giant Lemon & Paeroa Bottle"
+  content: "A massive, seven-meter-high concrete soda bottle located in Paeroa. It is mandatory to stop and take a photo pretending to drink from it."
+  tag: "Culture"
+
+- type: "slang"
+  title: "Under the Pump"
+  content: "Being under massive amounts of pressure, stress, or having an absolutely insane workload to finish before knock-off time."
+  tag: "Lingo"
+
+- type: "rural"
+  title: "The Shearer's Breakfast"
+  content: "Four cups of black coffee, a cold sausage from yesterday's BBQ, and half a pack of durries before shearing 200 sheep."
+  tag: "Rural NZ"
+
+- type: "meme"
+  title: "The Coromandel Traffic Jam"
+  content: "Sitting stationary on State Highway 25 behind a single tractor towing an old boat at 12 kilometers an hour for two hours."
+  tag: "Culture"
+
+- type: "bogan"
+  title: "The Chrome Skull Valve Caps"
+  content: "An absolute essential automotive upgrade: replacing standard black plastic tire valve caps with tiny molded chrome skulls."
+  tag: "Style"
+
+- type: "fact"
+  title: "The Raurimu Spiral"
+  content: "An absolute masterpiece of engineering where a train line literally loops over itself to conquer a massive hill. Nerd paradise."
+  tag: "History"
+
+- type: "slang"
+  title: "Wop-Wops"
+  content: "Out in the absolute middle of nowhere. Far beyond the city limits, deep where the cell phone reception goes to die."
+  tag: "Lingo"
+
+- type: "fishing"
+  title: "The Lost Hook Mystery"
+  content: "Tying a perfect knot, casting it out into the deep blue ocean, and having it snap instantly on a rock on the very first drop."
+  tag: "Fishing Stories"
+
+- type: "dairy"
+  title: "The $1 Toffee Milk"
+  content: "The ultimate survival candy. A flat, chewable brick of pure caramel flavor that takes approximately forty-five minutes to consume."
+  tag: "Dairy Encounters"
+
+- type: "fact"
+  title: "The Maui Dolphin"
+  content: "The rarest marine dolphin on earth, hanging out on our West Coast. They look like little swimming remotes with round fins."
+  tag: "NZ Wildlife"
+
+```
