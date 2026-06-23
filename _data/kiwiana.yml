@@ -46,7 +46,7 @@
 
 - type: "meme"
   title: "Always Blow on the Pie"
-  content: "Safer Communities Together. An absolute masterclass in tactical food safety advice from a legendary NZ police officer."
+  content: "It's been in the warming drawer for 12 hours! It'll be thermal nuclear! You must always blow on the pie... Safer Communities Together! legendary NZ police officer."
   tag: "Classic Viral"
 
 - type: "bogan"
@@ -132,9 +132,9 @@
   content: "Driving two hours to the boat ramp, launching the boat, getting out to the perfect spot, and realizing the squid is still in the freezer."
   tag: "Fishing Stories"
 
-- type: "dairy"
-  title: "The Hot Chip Sandwich"
-  content: "A fresh scoop of dairy chips, half a block of butter, and two slices of white bread. The pinnacle of Kiwi culinary achievement."
+- type: "Fish & Chip shop"
+  title: "The Chip Butty"
+  content: "A fresh scoop of hot chips, half a block of butter, and two slices of white bread. The pinnacle of Kiwi culinary achievement."
   tag: "Culture"
 
 - type: "slang"
@@ -290,7 +290,7 @@
   tag: "Fishing Stories"
 
 - type: "dairy"
-  title: "The Blue V Fuel"
+  title: "The Green-Blue V Fuel"
   content: "The foundational breakfast of tradies, students, and exhausted drivers across the nation. Tastes like pure green-blue energy."
   tag: "Dairy Encounters"
 
@@ -385,11 +385,6 @@
   title: "Gutted"
   content: "Deeply disappointed or heartbroken about something. 'Absolutely gutted about the rugby score last night.'"
   tag: "Lingo"
-
-- type: "fishing"
-  title: "The Anchor Tangle"
-  content: "An inevitable team-building disaster where the anchor rope knots itself into a perfect Rubik's cube beneath the anchor chain."
-  tag: "Fishing Stories"
 
 - type: "dairy"
   title: "The Tip Top Sign"
