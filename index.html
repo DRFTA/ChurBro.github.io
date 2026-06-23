@@ -105,7 +105,7 @@ layout: null
         title: "{{ item.title }}",
         content: "{{ item.content }}",
         tag: "{{ item.tag }}",
-        image: "{{ item.image }}",
+        image: "{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ item.image | relative_url }}{% endif %}",
         sound: "{{ item.sound }}",
         duration: {{ item.duration | default: 11 }}
       }{% unless forloop.last %},{% endunless %}
