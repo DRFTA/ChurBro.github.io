@@ -76,7 +76,7 @@ header {
 .live-indicator {
   color: red;
   animation: blink 1.5s infinite;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
 }
 
 /* Main Display Screen */
@@ -96,8 +96,8 @@ header {
 .content-tag {
   font-size: 0.8rem;
   text-transform: uppercase;
-  border: 1px solid var(--ui-amber);
-  color: var(--ui-amber);
+  border: 3px solid var(--neon-green);
+  color: var(--neon-green);
   padding: 3px 8px;
   margin-bottom: 15px;
   letter-spacing: 2px;
@@ -111,7 +111,7 @@ header {
   max-width: 100%;
   
   /* Solid black bar behind just the title */
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.95);
   padding: 10px 20px;
   border-left: 3px solid var(--neon-green); /* Cool terminal accent line */
 }
@@ -123,9 +123,9 @@ header {
   margin: 0;
   
   /* Solid black bar behind the body description text */
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.95);
   padding: 15px 20px;
-  border-left: 3px solid var(--ui-amber); /* Amber accent line to match the tags */
+  border-left: 3px solid var(--neon-green); /* Amber accent line to match the tags */
   margin-top: 10px;
 }
 
@@ -133,7 +133,7 @@ header {
   max-height: 35vh; /* Scales image beautifully relative to screen height */
   max-width: 100%;
   object-fit: contain;
-  border: 2px solid var(--neon-green);
+  border: 3px solid var(--neon-green);
   margin-bottom: 15px;
   box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
 }
@@ -147,7 +147,7 @@ header {
 iframe {
   width: 100%;
   height: 100%;
-  border: 2px solid var(--neon-green);
+  border: 3px solid var(--neon-green);
 }
 
 .audio-control {
