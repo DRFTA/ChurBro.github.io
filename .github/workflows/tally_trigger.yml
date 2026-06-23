@@ -1,0 +1,19 @@
+```yaml
+name: Handle Tally Form Submission
+
+on:
+  repository_dispatch:
+    types: [tally_submission]
+
+jobs:
+  process_form:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Read Form Data
+        run: |
+          echo "Form was submitted!"
+          echo "Payload Data: ${{ github.event.client_payload.form_data }}"
+          # Add your custom build, script, or automation logic right here
