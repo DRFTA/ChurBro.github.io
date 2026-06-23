@@ -40,7 +40,7 @@ layout: null
         title: "{{ item.title }}",
         content: "{{ item.content }}",
         tag: "{{ item.tag }}",
-        duration: {{ item.duration | default: 15 }}
+        duration: {{ item.duration | default: 11 }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
