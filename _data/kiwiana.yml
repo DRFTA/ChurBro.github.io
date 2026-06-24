@@ -545,11 +545,11 @@
   content: "Judging a dairy solely based on how aggressively the worker packs the ice cream down into the cone for a single scoop."
   tag: "Dairy Encounters"
 
-- type: "video"
-  title: 
-  content: "&autoplay=1"
-  tag: "Classic Ad"
-  duration: 
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
 
 - type: "fact"
   title: "The Giant Lemon & Paeroa Bottle"
@@ -577,11 +577,11 @@
   content: "An absolute essential automotive upgrade: replacing standard black plastic tire valve caps with tiny molded chrome skulls."
   tag: "Style"
 
-- type: "video"
-  title: 
-  content: "&autoplay=1"
-  tag: "Classic Ad"
-  duration: 
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
 
 - type: "fact"
   title: "The Raurimu Spiral"
@@ -610,11 +610,11 @@
   tag: "NZ Wildlife"
   image: "/assets/images/MauiDolphin.jpg"
 
-- type: "video"
-  title: 
-  content: "&autoplay=1"
-  tag: "Classic Ad"
-  duration: 
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
   
 - type: "fact"
   title: "The Kiwi"
@@ -633,11 +633,3 @@
   content: "The Pohutukawa is New Zealand’s Christmas tree because it bursts into red flowers around December"
   tag: "Kiwi Facts"
   image: "https://i0.wp.com/www.nznatureguy.com/wp-content/uploads/2019/01/pohutukawa-trees-1808452_1920.jpg"
-  
-
-- type: "slang"
-  title: "The death cough"
-  content: "When you mate coughs and you say if your gonna die die quietly"
-  tag: "Saying"
-  image: "1"
-  sound: ""
