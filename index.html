@@ -9,6 +9,72 @@ layout: null
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <style>
+    /* Gateway Layout Elements */
+    .gateway-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      display: flex; justify-content: center; align-items: center;
+      z-index: 9999;
+    }
+    .gateway-box {
+      background: #111;
+      border: 3px solid #ffeb3b;
+      padding: 25px;
+      max-width: 550px;
+      width: 90%;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      box-shadow: 0 0 20px rgba(255, 235, 59, 0.2);
+      border-radius: 4px;
+    }
+    .gateway-box h2 {
+      color: #ffeb3b;
+      margin-top: 0;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    .gateway-sub {
+      text-align: center;
+      font-style: italic;
+      color: #bbb;
+    }
+    .gateway-box hr {
+      border: 0; border-top: 1px dashed #ffeb3b; margin: 15px 0;
+    }
+    .gateway-body {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      max-height: 350px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+    .gateway-body ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+    .gateway-body li {
+      margin-bottom: 8px;
+    }
+    #gateway-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #ffeb3b;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.1s ease;
+    }
+    #gateway-btn:hover {
+      background: #fff;
+      transform: scale(1.02);
+    }
     .slide-image {
       max-height: 250px;
       max-width: 100%;
@@ -62,6 +128,7 @@ layout: null
     }
   </style>
   <script async src="https://tally.so/widgets/embed.js"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="6888f99d-3267-4562-b58a-d8fc8ab7b18f"></script>
 </head>
 <body>
 
@@ -72,6 +139,28 @@ layout: null
 
   <audio id="bg-audio" loop src="{{ '/assets/audio/somebuggerstolemycar.mp3' | relative_url }}"></audio>
   <audio id="slide-audio"></audio>
+    
+  <!-- KIWI GATEWAY DIALOG OVERLAY -->
+  <div id="kiwi-gateway" class="gateway-overlay">
+    <div class="gateway-box">
+      <h2>CHUR BRO, LISTEN UP 🤙</h2>
+      <p class="gateway-sub">Right, before you go poking around the site, we need to have a quick yarn.</p>
+      <hr>
+      <div class="gateway-body">
+        <p>This whole setup? It’s just for a bit of fucken fun, eh. We built this to have a laugh, bring a few smiles, and keep things properly kiwi as.</p>
+        <p>Here is the honest-to-God truth about what's going on here:</p>
+        <ul>
+          <li><strong>No Pockets Being Lined:</strong> This site is strictly not-for-profit. We aren't making a single cent off this, mate. No corporate bullshit, no hidden agendas.</li>
+          <li><strong>Just for Laughs:</strong> It’s literally just here for a good time. If you can’t handle a bit of a chuckle, you're in the wrong paddock.</li>
+          <li><strong>The Bottom Line:</strong> If something on here gets your knickers in a twist, don't come crying to us. Go complain to someone fucken else. We're fresh out of cares to give, bro.</li>
+        </ul>
+        <h3 style="margin-top: 15px; color: #ffeb3b;">The "Don't Be an Egg" Clause</h3>
+        <p>We're all adults here (well, mostly). Grab a cold one, have a look around, and don't take life too seriously. If you're looking for a formal customer service department to moan to, you've hit a dead end, chief.</p>
+        <p style="text-align: center; font-weight: bold; margin-top: 15px;">Sweet as? Sweet as. Enjoy the site, you good bastard.</p>
+      </div>
+      <button id="gateway-btn" onclick="letTheGoodTimesRoll()">SWEET AS 🤙</button>
+    </div>
+  </div>
 
   <div class="dashboard">
     <header>
@@ -141,8 +230,8 @@ layout: null
       }
     }, { once: true });
 
-    function toggleAudio() {
-      event.stopPropagation(); 
+	function toggleAudio(event) { // 👈 Added event here
+      if(event) event.stopPropagation(); 
       if (isMuted) {
         isMuted = false;
         audioToggleBtn.innerText = "🔊 AUDIO: ON";
@@ -155,6 +244,20 @@ layout: null
         bgAudio.pause();
         slideAudio.pause();
       }
+    }
+
+    function goForward(event) { // 👈 Added event here
+      if(event) event.stopPropagation();
+      renderNextItem();
+    }
+
+    function goBack(event) { // 👈 Added event here
+      if(event) event.stopPropagation();
+      // Step backwards two slots and clip at zero bounds
+      currentIndex = Math.max(0, currentIndex - 2);
+      const prevItem = dataWall[currentIndex];
+      currentIndex++;
+      renderItem(prevItem);
     }
 
     function renderItem(item) {
@@ -222,20 +325,6 @@ layout: null
       renderItem(nextItem);
     }
 
-    function goForward(event) {
-      if(event) event.stopPropagation();
-      renderNextItem();
-    }
-
-    function goBack(event) {
-      if(event) event.stopPropagation();
-      // Step backwards two slots and clip at zero bounds
-      currentIndex = Math.max(0, currentIndex - 2);
-      const prevItem = dataWall[currentIndex];
-      currentIndex++;
-      renderItem(prevItem);
-    }
-
     function startTimer() {
       clearInterval(timerInterval);
       countdownEl.innerText = `NEXT CHANNEL IN: ${currentCountdown}s`;
@@ -250,8 +339,19 @@ layout: null
       }, 1000);
     }
 
-    // Begin looping instantly from element index zero
-    renderNextItem();
+    // Trigger the entry gate sequencing
+    function letTheGoodTimesRoll() {
+      // 1. Kick off the audio streams smoothly now that browser permissions are granted
+      if (!isMuted) {
+        bgAudio.play().catch(err => console.log("Audio kick start skipped:", err));
+      }
+      
+      // 2. Clear out the gateway wall from view
+      document.getElementById('kiwi-gateway').style.display = 'none';
+      
+      // 3. Fire up the television sequence loop
+      renderNextItem();
+    }
   </script>
 </body>
 </html>
