@@ -10,19 +10,6 @@
   tag: "History"
   image: "/assets/images/pav9.jpg"
 
-- type: "meme"
-  title: "Nek Minnit"
-  content: "Left my scooter outside the dairy... nek minnit..."
-  tag: "Classic Viral"
-  image: "/assets/images/nekminnit.png"
-  sound: "https://www.myinstants.com/media/sounds/nek-minnit.mp3"
-
-- type: "video"
-  title: "Ghost Chips"
-  content: "https://www.youtube.com/embed/IxS1ZpKDWYs?si=rLc7qfpasgDYUcWR&autoplay=1"
-  tag: "PSA Masterpiece"
-  duration: 68
-
 - type: "slang"
   title: "Yeah Nah"
   content: "Technically means 'no', but implies I understand your point, I just completely disagree with it."
@@ -66,10 +53,10 @@
   tag: "Lingo"
 
 - type: "video"
-  title: "Speights, Good on you mate"
-  content: "https://www.youtube.com/embed/mdJupnWKykE?si=ck_GWxwXlN65kpbo&autoplay=1"
-  tag: "Classic Ad"
-  duration: 50
+  title: "Tell Me When"
+  content: "https://www.youtube.com/embed/0Z0WbrtVqSY?si=ipSqLKjBK8Hlg5RH&autoplay=1"
+  tag: "Pukana"
+  duration: 39
 
 - type: "rural"
   title: "No8 Wire Mentality"
@@ -101,7 +88,7 @@
   title: "Shopkeepers - Drug Driving"
   content: "https://www.youtube.com/embed/FTnnVnMvwVU?si=J0NOPHhqHTOvJTF5&autoplay=1"
   tag: "Classic Ad"
-  duration: 98
+  duration: 93
 
 - type: "meme"
   title: "It's Constitutional"
@@ -125,16 +112,16 @@
   content: "A masterclass in rural design: three strands of barbed wire, a couple of sticks, and a loop of wire. Simple, elegant, utterly infuriating to close."
   tag: "Rural NZ"
 
-- type: "video"
-  title: "Toyota Hilux - Bugger"
-  content: "https://www.youtube.com/embed/ZUNJd06iyWU?si=Z_DHFv083e-oQqke&autoplay=1"
-  tag: "Classic Ad"
-  duration: 50
-
 - type: "fishing"
   title: "Left the Bait at Home"
   content: "Driving two hours to the boat ramp, launching the boat, getting out to the perfect spot, and realizing the squid is still in the freezer."
   tag: "Fishing Stories"
+  
+- type: "video"
+  title: "Toyota Hilux - Bugger"
+  content: "https://www.youtube.com/embed/ZUNJd06iyWU?si=Z_DHFv083e-oQqke&autoplay=1"
+  tag: "Classic Ad"
+  duration: 48
 
 - type: "The Fish & Chip shop"
   title: "The Chip Butty"
@@ -164,10 +151,10 @@
   image: "/assets/images/holdenvsford.png"
   
 - type: "video"
-  title: "Tell Me When"
-  content: "https://www.youtube.com/embed/0Z0WbrtVqSY?si=ipSqLKjBK8Hlg5RH&autoplay=1"
-  tag: "Pukana"
-  duration: 45
+  title: "Speights, Good on you mate"
+  content: "https://www.youtube.com/embed/mdJupnWKykE?si=ck_GWxwXlN65kpbo&autoplay=1"
+  tag: "Classic Ad"
+  duration: 47
 
 - type: "slang"
   title: "Skint"
@@ -195,11 +182,17 @@
   content: "The true lottery of the dairy pie warmer. Will it be ice cold in the middle, or the temperature of molten lava? There is no between."
   tag: "Dairy Encounters"
 
+- type: "video"
+  title: "Ghost Chips"
+  content: "https://www.youtube.com/embed/IxS1ZpKDWYs?si=rLc7qfpasgDYUcWR&autoplay=1"
+  tag: "PSA Masterpiece"
+  duration: 63
+
 - type: "slang"
   title: "Tiki Tour"
   content: "Taking the longest, most scenic route possible to a destination, usually because you missed the turnoff three towns ago."
   tag: "Lingo"
-
+  
 - type: "fact"
   title: "The Tuatara"
   content: "A literal living dinosaur hanging out on our offshore islands. Features a literal third eye on top of its head because it's just built different."
@@ -216,18 +209,18 @@
   content: "A University of Otago student known for living in freezing, moldy flats and burning couches when the rugby goes well."
   tag: "Culture"
   image: "/assets/images/scarfies.jpg"
-  
-- type: "video"
-  title: "Goodnight Kiwi 1994"
-  content: "https://www.youtube.com/embed/Qm4HYfSBe0w?si=EwF1Tz6inZA9oBgq&autoplay=1"
-  tag: "Classic Ad"
-  duration: 64  
 
 - type: "rural"
   title: "The Working Dog Whistle"
   content: "A sound so incredibly loud and high-pitched it can command a dog two valleys away, executed using only two dirty fingers."
   tag: "Rural NZ"
   image: "/assets/images/Dogwhistle.jpg"
+  
+- type: "video"
+  title: "Goodnight Kiwi 1994"
+  content: "https://www.youtube.com/embed/Qm4HYfSBe0w?si=EwF1Tz6inZA9oBgq&autoplay=1"
+  tag: "Classic Ad"
+  duration: 63  
 
 - type: "fact"
   title: "The Edmonds Cook Book"
@@ -256,6 +249,19 @@
   tag: "Dairy Encounters"
   image: "/assets/images/longestdrink.jpg"
 
+- type: "video"
+  title: "Mitre 10 - DIY Kids"
+  content: "https://www.youtube.com/embed/UT6oZqYij8U?si=yEpKgIhIrKdJCFQd&autoplay=1"
+  tag: "Classic Ad"
+  duration: 48
+  
+- type: "meme"
+  title: "Nek Minnit"
+  content: "Left my scooter outside the dairy... nek minnit..."
+  tag: "Classic Viral"
+  image: "/assets/images/nekminnit.png"
+  sound: "https://www.myinstants.com/media/sounds/nek-minnit.mp3"  
+
 - type: "fact"
   title: "The Kākāpō"
   content: "A giant, flightless, nocturnal green parrot that smells like old honey and occasionally confuses human cameramen for potential mates."
@@ -273,16 +279,16 @@
   content: "Hurry up! Get a move on! Derived from the lovely aesthetic of sheep wool clacking together when they run."
   tag: "Lingo"
 
-- type: "video"
-  title: "Mitre 10 - DIY Kids"
-  content: "https://www.youtube.com/embed/UT6oZqYij8U?si=yEpKgIhIrKdJCFQd&autoplay=1"
-  tag: "Classic Ad"
-  duration: 50
-
 - type: "rural"
   title: "The Possum Plucking Industry"
   content: "A very specific rural side-hustle where clearing pests turns into a lucrative cashmere-blend fashion statement."
   tag: "Rural NZ"
+
+- type: "video"
+  title: "Telecom - Spot the Dog"
+  content: "https://www.youtube.com/embed/SLbhflCzJls?si=Wm7eMe6bW3VmDyRK&autoplay=1"
+  tag: "Classic Ad"
+  duration: 65
 
 - type: "fact"
   title: "The Hokey Pokey Supremacy"
@@ -310,6 +316,12 @@
   content: "Telling your best mate exactly where you caught the big ones, but deliberately giving him coordinates 5 kilometers off target."
   tag: "Fishing Stories"
 
+- type: "video"
+  title: "Crunchie - The Great Gold Robbery"
+  content: "https://www.youtube.com/embed/A3laBRBPfQ4?si=i2a1WzY_tpHrauXk&autoplay=1" 
+  tag: "Classic Ad"
+  duration: 96
+
 - type: "dairy"
   title: "The Green-Blue V Fuel"
   content: "The foundational breakfast of tradies, students, and exhausted drivers across the nation. Tastes like pure green-blue energy."
@@ -327,12 +339,6 @@
   content: "Either completely exhausted after a hard day's work, or a piece of equipment that is broken beyond any hope of repair."
   tag: "Lingo"
 
-- type: "video"
-  title: "Telecom - Spot the Dog"
-  content: "https://www.youtube.com/embed/SLbhflCzJls?si=Wm7eMe6bW3VmDyRK&autoplay=1"
-  tag: "Classic Ad"
-  duration: 68
-
 - type: "rural"
   title: "The Ag Day Lamb"
   content: "Bringing a baby lamb into school for the day, only for it to completely lose its mind and run amok through the principal's office."
@@ -342,6 +348,12 @@
   title: "The Bluff Oyster"
   content: "Harvested from the freezing waters of the Foveaux Strait. People will gladly pay extortionate amounts of cash for a dozen of these beauties."
   tag: "Culture"
+
+- type: "video"
+  title: "Instant Kiwi - Fisherman"
+  content: "https://www.youtube.com/embed/a0RRUiaeMJs?si=Tu2PVhAZcaUJAPx5&autoplay=1" 
+  tag: "Classic Ad"
+  duration: 48
 
 - type: "bogan"
   title: "The Primer-Paint Panel"
@@ -370,16 +382,16 @@
   tag: "NZ Wildlife"
   image: "/assets/images/fantail.jpg"
 
+- type: "video"
+  title: "Lotto - Wilson the Dog"
+  content: "https://www.youtube.com/embed/keBVtJLGhl4?si=3IG6pggBNU4waAN3&autoplay=1"
+  tag: "Classic Ad"
+  duration: 95
+
 - type: "slang"
   title: "Choice"
   content: "Excellent, great, or an expression of absolute agreement. 'That's choice, bro.'"
   tag: "Lingo"
-
-- type: "video"
-  title: "Crunchie - The Great Gold Robbery"
-  content: "https://www.youtube.com/embed/A3laBRBPfQ4?si=i2a1WzY_tpHrauXk&autoplay=1" 
-  tag: "Classic Ad"
-  duration: 98
 
 - type: "rural"
   title: "The Quad Bike Dog Rider"
@@ -402,6 +414,12 @@
   content: "Sitting on a riverbank in a folding chair for 12 hours with a giant net, all to catch a tiny cupful of transparent fish for a patty."
   tag: "Culture"
   image: "/assets/images/whitebait-fritter.jpg"
+  
+- type: "video"
+  title: "Haka"
+  content: "https://www.youtube.com/embed/76gtc2DCtqM?si=A1q1mghagcmnNYRI&autoplay=1"
+  tag: "Maori Culture"
+  duration: 90  
 
 - type: "slang"
   title: "Gutted"
@@ -424,17 +442,17 @@
   content: "Incredibly cool, high quality, or visually spectacular. Despite using 'mean', it is 100% a compliment."
   tag: "Lingo"
 
-- type: "video"
-  title: "Instant Kiwi - Fisherman"
-  content: "https://www.youtube.com/embed/a0RRUiaeMJs?si=Tu2PVhAZcaUJAPx5&autoplay=1" 
-  tag: "Classic Ad"
-  duration: 50
-
 - type: "rural"
   title: "The Hay Baling Workout"
   content: "Spending a 30°C January afternoon throwing heavy, prickly square bales of hay onto a moving trailer until your arms turn red."
   tag: "Rural NZ"
   image: "/assets/images/haybail.jpg"
+
+- type: "video"
+  title: "What day is Father's Day?"
+  content: "https://www.youtube.com/embed/Gjlo3-V4_hA?si=DdpI4nx7FWEMMrLA&autoplay=1"
+  tag: "Classic Ad"
+  duration: 120
 
 - type: "meme"
   title: "The Swanndri Armor"
@@ -463,6 +481,12 @@
   content: "Turning completely green, leaning over the side of the boat, but loudly insisting to the crew that you 'just had a bad pie'."
   tag: "Fishing Stories"
 
+- type: "video"
+  title: "Otahuhu bomb scare 'dots' guy"
+  content: "https://www.youtube.com/embed/mlentROTmLY?si=fdDvGAEH9gQOOmjg&autoplay=1"
+  tag: "Classic Ad"
+  duration: 35
+
 - type: "dairy"
   title: "The K Bar Challenge"
   content: "A legendary, rock-hard stick of bright pink or green candy designed specifically to extract loose fillings from your teeth."
@@ -480,12 +504,6 @@
   content: "Suspicious, untrustworthy, or something that doesn't quite look right. 'That deal looks a bit suss, bro.'"
   tag: "Lingo"
 
-- type: "video"
-  title: "Lotto - Wilson the Dog"
-  content: "https://www.youtube.com/embed/keBVtJLGhl4?si=3IG6pggBNU4waAN3&autoplay=1"
-  tag: "Classic Ad"
-  duration: 98
-
 - type: "rural"
   title: "The Electric Fence Test"
   content: "Conning your city slicker cousin into holding a blade of grass against an active livestock wire just to see him jump."
@@ -495,6 +513,12 @@
   title: "The Bach Toilet Map"
   content: "Navigating out to the long-drop toilet at 2:00 AM using nothing but a fading phone light while actively avoiding giant spiders."
   tag: "Culture"
+
+- type: "video"
+  title: "Nek Week... Awww Gummon!"
+  content: "https://www.youtube.com/embed/M7oNjuy6otg?si=2OG2VzzHk0Gm5U7l&autoplay=1"
+  tag: "Classic Ad"
+  duration: 16
 
 - type: "bogan"
   title: "The Tape Deck Aux Cord"
@@ -521,6 +545,12 @@
   content: "Judging a dairy solely based on how aggressively the worker packs the ice cream down into the cone for a single scoop."
   tag: "Dairy Encounters"
 
+- type: "video"
+  title: 
+  content: "&autoplay=1"
+  tag: "Classic Ad"
+  duration: 
+
 - type: "fact"
   title: "The Giant Lemon & Paeroa Bottle"
   content: "A massive, seven-meter-high concrete soda bottle located in Paeroa. It is mandatory to stop and take a photo pretending to drink from it."
@@ -531,12 +561,6 @@
   title: "Under the Pump"
   content: "Being under massive amounts of pressure, stress, or having an absolutely insane workload to finish before knock-off time."
   tag: "Lingo"
-  
-- type: "video"
-  title: "Haka"
-  content: "https://www.youtube.com/embed/76gtc2DCtqM?si=A1q1mghagcmnNYRI&autoplay=1"
-  tag: "Maori Culture"
-  duration: 90  
 
 - type: "rural"
   title: "The Shearer's Breakfast"
@@ -552,6 +576,12 @@
   title: "The Chrome Skull Valve Caps"
   content: "An absolute essential automotive upgrade: replacing standard black plastic tire valve caps with tiny molded chrome skulls."
   tag: "Style"
+
+- type: "video"
+  title: 
+  content: "&autoplay=1"
+  tag: "Classic Ad"
+  duration: 
 
 - type: "fact"
   title: "The Raurimu Spiral"
@@ -580,6 +610,12 @@
   tag: "NZ Wildlife"
   image: "/assets/images/MauiDolphin.jpg"
 
+- type: "video"
+  title: 
+  content: "&autoplay=1"
+  tag: "Classic Ad"
+  duration: 
+  
 - type: "fact"
   title: "The Kiwi"
   content: "The Kiwi is the only living bird that’s truly flightless and has nostrils at the tip of its beak, so it can breathe while mostly buried in the soil."
@@ -590,11 +626,11 @@
   title: "Glowworms (tītipounamu)"
   content: "Māori used glowworms (tītipounamu) to make “light” for night walks"
   tag: "Kiwi Facts"
-  image: "https://myqueenstowndiary.com/wp-content/uploads/2024/09/Glow-worms-in-te-anau-caves-RealNZ-New-Zealand.jpg.webp"
+  image: "https://myqueenstowndiary.com/wp-content/uploads/2024/09/Glow-worms-in-te-anau-caves-RealNZ-New-Zealand.jpg"
 
 - type: "fact"
   title: "Pohutukawa"
   content: "The Pohutukawa is New Zealand’s Christmas tree because it bursts into red flowers around December"
   tag: "Kiwi Facts"
   image: "https://i0.wp.com/www.nznatureguy.com/wp-content/uploads/2019/01/pohutukawa-trees-1808452_1920.jpg"
-  sound: ""
+  
