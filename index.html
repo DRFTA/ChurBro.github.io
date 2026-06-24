@@ -129,21 +129,11 @@ layout: null
     let timerInterval;
     let isMuted = false;
 
-    let shuffledDeck = [];
-    let historyStack = [];
-    let historyIndex = -1;
+    // Simplified sequential indexing instead of random deck shuffling
+    let currentIndex = 0;
 
     bgAudio.volume = 0.1;
     slideAudio.volume = 0.1;
-
-    function shuffleNewDeck() {
-      let deck = [...dataWall];
-      for (let i = deck.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [deck[i], deck[j]] = [deck[j], deck[i]];
-      }
-      return deck;
-    }
 
     window.addEventListener('click', () => {
       if (!isMuted && bgAudio.paused && slideAudio.paused && !crtOverlay.classList.contains('no-overlay')) {
@@ -220,17 +210,15 @@ layout: null
     }
 
     function renderNextItem() {
-      if (historyIndex < historyStack.length - 1) {
-        historyIndex++;
-        renderItem(historyStack[historyIndex]);
+      // Check if we have completed the entire list
+      if (currentIndex >= dataWall.length) {
+        countdownEl.innerText = "REFRESHING BROADCAST DECK...";
+        window.location.reload();
         return;
       }
-      if (shuffledDeck.length === 0) {
-        shuffledDeck = shuffleNewDeck();
-      }
-      const nextItem = shuffledDeck.pop();
-      historyStack.push(nextItem);
-      historyIndex++;
+      
+      const nextItem = dataWall[currentIndex];
+      currentIndex++;
       renderItem(nextItem);
     }
 
@@ -241,10 +229,11 @@ layout: null
 
     function goBack(event) {
       if(event) event.stopPropagation();
-      if (historyIndex > 0) {
-        historyIndex--;
-        renderItem(historyStack[historyIndex]);
-      }
+      // Step backwards two slots and clip at zero bounds
+      currentIndex = Math.max(0, currentIndex - 2);
+      const prevItem = dataWall[currentIndex];
+      currentIndex++;
+      renderItem(prevItem);
     }
 
     function startTimer() {
@@ -261,7 +250,7 @@ layout: null
       }, 1000);
     }
 
-    shuffledDeck = shuffleNewDeck();
+    // Begin looping instantly from element index zero
     renderNextItem();
   </script>
 </body>
