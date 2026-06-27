@@ -63,7 +63,7 @@ body, html {
   z-index: -1; /* Puts it behind all text and videos, but above the wallpaper */
   width: 120px; /* Adjust size as needed */
   height: auto;
-  opacity: 0.25; /* Keeps it subtle so it isn't distracting */
+  opacity: 0.85; /* Keeps it subtle so it isn't distracting */
   pointer-events: none; /* Prevents it from accidentally blocking mouse clicks */
   
   /* Applies the smooth floating animation */
