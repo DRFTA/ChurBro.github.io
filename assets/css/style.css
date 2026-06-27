@@ -53,10 +53,10 @@ body, html {
   z-index: 1; /* Sits cleanly on top of the body wallpaper */
   width: 120px; 
   height: auto;
-  opacity: 0.15; /* Subdued so it doesn't clash with text */
+  opacity: 0.45; /* Subdued so it doesn't clash with text */
   pointer-events: none; 
   
-  animation: floatAround 25s infinite ease-in-out alternate;
+  animation: floatAround 45s infinite ease-in-out alternate;
 }
 
 /* Force the dashboard to layer explicitly ON TOP of the floating logo */
