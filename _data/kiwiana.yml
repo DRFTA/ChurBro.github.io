@@ -111,6 +111,7 @@
   title: "The Taranaki Gate"
   content: "A masterclass in rural design: three strands of barbed wire, a couple of sticks, and a loop of wire. Simple, elegant, utterly infuriating to close."
   tag: "Rural NZ"
+  image: "https://teara.govt.nz/sites/default/files/p18612tml.jpg"
 
 - type: "fishing"
   title: "Left the Bait at Home"
@@ -127,6 +128,7 @@
   title: "The Chip Butty"
   content: "A fresh scoop of hot chips, half a block of butter, and two slices of white bread. The pinnacle of Kiwi culinary achievement."
   tag: "Culture"
+  image: "https://cookingperfected.com/wp-content/uploads/2020/05/Chip-Butty-no-wm.jpg"
 
 - type: "slang"
   title: "Chocka"
@@ -171,6 +173,7 @@
   title: "The Cheese Roll"
   content: "The 'Southland Sushi'. A delicate delicacy of white bread, processed cheese, and onion soup mix. Do not insult it."
   tag: "Culture"
+  image: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_1005,q_65,w_639/v1/clients/southlandnz/Cheese_Rolls_Southland_New_Zealand_Credit_Great_South_2__502f9ab2-7e8b-459a-b472-372a1ae9830f.jpg"
 
 - type: "fishing"
   title: "The Kahawai Disappointment"
@@ -232,6 +235,7 @@
   title: "The Trampoline in the Wind"
   content: "A classic Kiwi spring tradition where your neighbor's trampoline magically migrates over a two-meter fence into your garden."
   tag: "Culture"
+  image: "https://www.stuff.co.nz/media/images/9Tzi8ywRz924XE3uHaD6DfGZQfjEdZd7oKlsiR53VLHvSZExpMzuRmKdwHbkL9PksrALw6KZwio+gJB6x8DpBYkV2vt0k52jFdlMD6lZ2h0Y6P+nzrM+01B9J5SxWU08kpvBRMA3Z4pTT9%2FGm%2FdVx%2FloseBG+c1vFn7Nr9QXP+rqVKoJW+zpQMx9mZ5EOBhaN3fN94KOTkviRRLK8F2cLQ=="
 
 - type: "slang"
   title: "Pack a Sad"
@@ -283,6 +287,7 @@
   title: "The Possum Plucking Industry"
   content: "A very specific rural side-hustle where clearing pests turns into a lucrative cashmere-blend fashion statement."
   tag: "Rural NZ"
+  image: "https://images.nzgeo.com/1970/01/63_possums_06-883x1300.jpg"
 
 - type: "video"
   title: "Telecom - Spot the Dog"
@@ -300,6 +305,7 @@
   title: "The Barefoot Supermarket Run"
   content: "Walking completely barefoot through a freezing cold supermarket in mid-winter. Concrete floors mean nothing to Kiwi feet."
   tag: "Culture"
+  image: "https://preview.redd.it/just-some-people-grocery-shopping-v0-n8n35kelb0r01.jpg?width=640&crop=smart&auto=webp&s=0917f0532de7402e236ecfbe7b7da65b787bb6a3"
 
 - type: "slang"
   title: "Stoked"
@@ -348,6 +354,7 @@
   title: "The Bluff Oyster"
   content: "Harvested from the freezing waters of the Foveaux Strait. People will gladly pay extortionate amounts of cash for a dozen of these beauties."
   tag: "Culture"
+  image: "https://commons.wikimedia.org/wiki/File:Bluff_oysters_on_ice.jpg"
 
 - type: "video"
   title: "Instant Kiwi - Fisherman"
@@ -370,11 +377,13 @@
   title: "The Surfcasting Rogue Wave"
   content: "Standing on a rock ledge completely focused on your line, right until a massive swell catches you completely unawares and fills your waders."
   tag: "Fishing Stories"
+  image: "https://www.thefisherman.com/wp-content/uploads/2022/07/20220720-surf-BOOTS-e1658128953336.jpg"
 
 - type: "dairy"
   title: "The Sausage Roll Ketchup Technique"
   content: "Biting the corner off a plastic tomato sauce packet and expertly injecting the entire contents directly inside the pastry shell."
   tag: "Dairy Encounters"
+  image: "https://commons.wikimedia.org/wiki/File:Gregg%27s_meat-free_sausage_roll_(home-baked)_2021_05.jpg"
 
 - type: "fact"
   title: "The Fantail (Pīwakawaka)"
@@ -404,11 +413,6 @@
   tag: "Culture"
   image: "/assets/images/longwhitecloud.jpg"
 
-- type: "bogan"
-  title: "The Fuzzy Dice Ritual"
-  content: "Hanging a massive pair of neon pink fuzzy dice from the rearview mirror to instantly increase your car's value by fifty bucks."
-  tag: "Style"
-
 - type: "fact"
   title: "The Whitebait Frenzy"
   content: "Sitting on a riverbank in a folding chair for 12 hours with a giant net, all to catch a tiny cupful of transparent fish for a patty."
@@ -430,6 +434,7 @@
   title: "The Tip Top Sign"
   content: "The universal beacon of safety. Seeing that classic dairy sign from 2 kilometers down a rural highway means food is near."
   tag: "Dairy Encounters"
+  image: "https://static.wixstatic.com/media/64b5b9_315cb0d5dbfd4bca8d350d1147c70b34~mv2.jpg/v1/fill/w_280,h_196,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tip%20Top%20Dairy%201.jpg"
 
 - type: "fact"
   title: "The Pūkeko"
@@ -459,11 +464,6 @@
   content: "A heavy woolen bush shirt that is completely waterproof, windproof, indestructible, and has not been washed since 1994."
   tag: "Style"
   image: "/assets/images/swanndri.jpeg"
-
-- type: "bogan"
-  title: "The Zip-Tie Bumper Fix"
-  content: "When a drift session goes wrong, stitching your front bumper back together using 40 interlocking plastic zip-ties like surgical sutures."
-  tag: "Bogan Engineering"
 
 - type: "fact"
   title: "The Big Carrot"
@@ -508,6 +508,7 @@
   title: "The Electric Fence Test"
   content: "Conning your city slicker cousin into holding a blade of grass against an active livestock wire just to see him jump."
   tag: "Rural NZ"
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHluHb1UTBCkpNyrgZN56Yd7CccVmxeZwkf0q0tVbzhnj2VwQ49gJY9qu&s=10"
 
 - type: "meme"
   title: "The Bach Toilet Map"
@@ -520,15 +521,11 @@
   tag: "Classic Ad"
   duration: 16
 
-- type: "bogan"
-  title: "The Tape Deck Aux Cord"
-  content: "Using a mechanical cassette tape adapter with a wire hanging out of it to play modern tunes through a 1989 stereo head unit."
-  tag: "Bogan Engineering"
-
 - type: "fact"
   title: "The Hundertwasser Toilets"
   content: "Kawakawa's main tourist attraction: a public toilet block built out of recycled bottles and wavy tiles. Truly avant-garde relief."
   tag: "History"
+  image: "https://commons.wikimedia.org/wiki/File:0_3060Kawakawa_-_Neuseeland_-_Hundertwassertoilette.jpg"
 
 - type: "slang"
   title: "Scrag"
@@ -544,6 +541,7 @@
   title: "The Ice Cream Scoop Politics"
   content: "Judging a dairy solely based on how aggressively the worker packs the ice cream down into the cone for a single scoop."
   tag: "Dairy Encounters"
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8aY4ASmuURa7A8xI0vLNehioFJb6Q7sot7vmkhvDOhA&s=10"
 
 #- type: "video"
 #  title: 
@@ -572,27 +570,23 @@
   content: "Sitting stationary on State Highway 25 behind a single tractor towing an old boat at 12 kilometers an hour for two hours."
   tag: "Culture"
 
-- type: "bogan"
-  title: "The Chrome Skull Valve Caps"
-  content: "An absolute essential automotive upgrade: replacing standard black plastic tire valve caps with tiny molded chrome skulls."
-  tag: "Style"
-
+- type: "fact"
+  title: "The Raurimu Spiral"
+  content: "An absolute masterpiece of engineering where a train line literally loops over itself to conquer a massive hill. Nerd paradise."
+  tag: "History"
+  image: "/assets/images/Raurimu.png"
+  
 #- type: "video"
 #  title: 
 #  content: "&autoplay=1"
 #  tag: "Classic Ad"
 #  duration: 
 
-- type: "fact"
-  title: "The Raurimu Spiral"
-  content: "An absolute masterpiece of engineering where a train line literally loops over itself to conquer a massive hill. Nerd paradise."
-  tag: "History"
-  image: "/assets/images/Raurimu.png"
-
 - type: "slang"
   title: "Wop-Wops"
   content: "Out in the absolute middle of nowhere. Far beyond the city limits, deep where the cell phone reception goes to die."
   tag: "Lingo"
+  image: "https://norsewoodheritage.co.nz/wp-content/uploads/2018/07/stream-shot-our-story-photo-1024x1024.jpg"
 
 - type: "fishing"
   title: "The Lost Hook Mystery"
@@ -647,3 +641,210 @@
   tag: " Culture"
   image: "https://www.stuff.co.nz/media/images/9Tzi8ywRz924XE3uHaD6DZ3Ef+IdbOiYlvIROR5vlqUeRrexTocZGobKRJ9od%2Fgnk3B%2FCeKTmTAsIjj6Q0YaYX9Uq+gnnC8fNE+01m4UHSS4u5crJgT9z5yCgAfDHtdoGP0A3RD24%2FrT+33h%2FuxN2ZSz2uYA%2FXY0WJmoq3YICxt6ifUlMlKj5Ofj+fRmPnX+58lqgkLqHkUx12tcWmHdIw=="
   sound: ""
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+
+- type:
+  title: "The Royal Endorsement of the Wooden Buzzy Bee"
+  content: "The Buzzy Bee pull-along toy is New Zealand's most famous piece of domestic design, created in the mid-1940s by brothers Hector and John Ramsay. Equipped with rotating wings that emit a loud clicking noise, it became a global media sensation in April 1983 when the infant Prince William played with one on the lawn of Government House in Auckland, cementing its position in international pop culture."
+  image: "https://commons.wikimedia.org/wiki/File:Toy,_pull-along_(AM_1999.104.24-6).jpg"
+
+- type:  
+  title: "The Culinary Diplomacy of the Pavlova"
+  content: "Created as a tribute to Russian ballerina Anna Pavlova during her 1926 tour of New Zealand, this meringue dessert topped with whipped cream and kiwifruit has sparked a long-standing trans-Tasman ownership dispute. Historical records show its first printed recipe appeared in a New Zealand cookbook in the early 1930s, supporting its status as a native culinary icon."
+  image: "https://commons.wikimedia.org/wiki/File:Pavlova_dessert.JPG"
+
+- type:  
+  title: "The Iridescent Eyes of Māori Pāua Shell Carving"
+  content: "Pāua is a unique species of edible abalone encased in a highly durable, brilliant blue-green shell. Traditionally used by Māori artisans to represent the flashing eyes of ancestral figures in wooden meeting house carvings, polished pāua shell was adapted in the twentieth century into jewelry, souvenirs, and domestic ashtrays."
+  image: "https://commons.wikimedia.org/wiki/File:Poupou_by_Rangi_Hetet_(detail).JPG"
+
+- type:  
+  title: "The Improvisational Engineering of Number 8 Wire"
+  content: "Originally imported as a standard gauge of galvanized steel wire for agricultural fencing, Number 8 wire became a symbol of Kiwi resourcefulness. Because geographic isolation made replacement parts difficult to obtain, farmers used the wire to repair machinery, build tools, and solve household problems, establishing it as a synonym for creative engineering."
+  image: "https://commons.wikimedia.org/wiki/File:Barbed_wire_B%26W.JPG"
+
+- type:  
+  title: "James Wattie and the Preservation of the Harvest"
+  content: "During the Great Depression of the 1930s, Hastings businessman James Wattie realized that the vast surplus of local Hawke's Bay tomatoes was rotting in fields. In 1934, he established a local cannery, producing canned fruits, vegetables, and the highly celebrated Wattie’s Tomato Sauce, which remains a staple in households across the nation."
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiWWHMzRGG7zNGFS0YAxpYMeaJ9GCDVArwYi5BGFJIx1qLJUd_pg7171df&s=10"
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+  
+- type:
+  title: "The Laser Kiwi and the Flag Referendum"
+  content: "During the 2015–2016 New Zealand flag referendums, a humorous design by James Gray featuring a kiwi shooting green laser beams from its eyes gained massive international popularity. While it was not chosen as the official flag, the 'Laser Kiwi' has become an alternative emblem of modern pop culture and satirical national pride."
+  image: "https://commons.wikimedia.org/wiki/File:Fire_the_laser.svg"
+
+- type:  
+  title: "Tino Rangatiratanga: The Sovereign Māori Flag"
+  content: "First unveiled on Waitangi Day in 1990, the National Māori flag features black, white, and red panels representing the sky, earth, and physical realm. The central spiral koru pattern references the Māori name of New Zealand, Aotearoa, which translates to 'the land of the long white cloud', serving as a powerful bicultural icon."
+  image: "https://commons.wikimedia.org/wiki/File:Tino_Rangatiratanga_flag_against_sky_2024.jpg"
+
+- type:""  
+  title: "The European and Māori Fusion in the Coat of Arms"
+  content: "Dating to 1911 and revised in 1956, the New Zealand Coat of Arms visually depicts the bicultural foundations of the state. It displays a European woman holding the New Zealand flag opposite a Māori chief holding a traditional taiaha (spear), framing a central shield divided with symbols of maritime trade, industry, and agriculture."
+  image: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_New_Zealand.svg"
+
+- type:""  
+  title: "The Healing Powers of the Yellow Kōwhai Blossom"
+  content: "The native Kōwhai tree is highly recognizable for its bright yellow flowers, which blossom in spring. Māori traditionally used the tree's highly flexible branches as construction material and snared birds attracted to its nectar, while utilizing various parts of the tree for highly complex herbal medicines."
+  image: "https://commons.wikimedia.org/wiki/File:K%C5%8Dwhai_flowers.jpg"
+
+- type:""  
+  title: "AJ Hackett and the Commercialization of Bungy Jumping"
+  content: "The extreme sport of commercial bungy jumping was popularized in New Zealand by AJ Hackett at the Kawarau Bridge in Queenstown in 1988. Using specialized elastic cords, Hackett turned an ancient Pentecost Island ritual into a global industry, symbolizing Kiwi adventure and engineering innovation."
+  image: "https://commons.wikimedia.org/wiki/File:Bungy_jumping_from_the_Kawarau_Bridge_near_Queenstown_1988_(10805217116).jpg"
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+
+- type:""  
+  title: "The Whimsical World of the Hobbiton Movie Set"
+  content: "The transformation of a sheep farm in Matamata into the permanent Hobbiton movie set for Peter Jackson’s cinematic adaptations of J.R.R. Tolkien’s works represents a major milestone in modern tourism and identity. The circular green hobbit holes have become modern symbols of New Zealand's landscapes and cinematic craft."
+  image: "https://commons.wikimedia.org/wiki/File:2022-06-10_Hobbiton_-_The_Shire_location_5.jpg"
+
+- type:""  
+  title: "Nelson’s Blue Lake: The Clearest Natural Water"
+  content: "Nelson’s Blue Lake, known as Rotomairewhenua in Māori, holds the official title of the clearest natural body of water in the world. Scientific tests show that its water clarity is comparable to distilled water, with visibility extending up to 80 meters, serving as a sacred icon of natural heritage."
+  image: "https://commons.wikimedia.org/wiki/File:Rotomairewhenua.jpg"
+
+- type:""  
+  title: "Kate Sheppard and the Electoral Milestone of 1893"
+  content: "In September 1893, New Zealand became the first self-governing nation in the world to grant women the right to vote in parliamentary elections. Led by Kate Sheppard, the historic achievement is a cornerstone of the nation’s egalitarian social history, preceding other Western democracies by decades."
+  image: "https://commons.wikimedia.org/wiki/File:Mrs._K._W._Sheppard_(cropped).jpg"
+
+- type:""  
+  title: "The Steep Concrete Ascent of Baldwin Street"
+  content: "Located in the southern city of Dunedin, Baldwin Street is officially recognized as the steepest residential street in the world, featuring a maximum grade of approximately $34.8\%$. The street is constructed using concrete rather than asphalt to prevent the road surface from melting and sliding down the slope during hot summers."
+  image: "https://commons.wikimedia.org/wiki/File:House_at_Baldwin_Street.JPG"
+
+- type:""  
+  title: "The Historic Timber and Brews of the Moutere Inn"
+  content: "Established near Nelson in 1850, the Moutere Inn holds the prestigious title of New Zealand's oldest pub still operating in its original building. It serves as a historical monument to the early days of European settlement and the social role of public houses in community formation."
+  image: "https://commons.wikimedia.org/wiki/File:Moutere_Inn_MRD.jpg"
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+
+- type:""  
+  title: "The Silvery Undersides of the Native Ponga Fern"
+  content: "The endemic silver fern, or ponga (Cyathea dealbata), features a dark green top leaf and a brilliant silver underside. Before European colonization, Māori travelers laid cut silver fern leaves upside down along forest paths, using the reflective silver surface to catch moonlight and navigate the bush after dark."
+  image: "https://commons.wikimedia.org/wiki/File:Alsophila_tricolor_kz03.jpg"
+ 
+- type:"" 
+  title: "The Enormous Relative Volume of the Kiwi Egg"
+  content: "Relative to its body size, the female kiwi bird lays a larger egg than almost any other avian species. While a human baby constitutes roughly $5\%$ of a mother's body weight, a fully formed kiwi egg occupies up to $20\%$ of the female's internal body cavity before laying, demanding a massive metabolic effort."
+  image: "https://commons.wikimedia.org/wiki/File:Kiwi_hg.jpg"
+
+- type:""  
+  title: "The Smart and Rubber-Chewing Kea Alpine Parrot"
+  content: "The kea (Nestor notabilis) is the world’s only true alpine parrot and is famous for its intelligence and curiosity. Often congregating in high-altitude car parks near ski resorts, these parrots frequently damage cars by using their sharp, curved beaks to chew through rubber window seals and windshield wipers."
+  image: "https://commons.wikimedia.org/wiki/File:Kea._New_Zealand_Alpine_parrot._(51793149453).jpg"
+
+- type:""  
+  title: "The Dual Vocal Cords of the Mimetic Tūī Bird"
+  content: "The native tūī bird (Prosthemadera novaeseelandiae) is recognizable for its metallic blue-green plumage and a distinctive white tuft of feathers under its throat. It possesses dual vocal cords that allow it to produce highly complex songs, mimic human speech, and copy environmental sounds with extraordinary accuracy."
+  image: "https://commons.wikimedia.org/wiki/File:Tui_(Prosthemadera_novaeseelandiae)_Tiritiri_Matangi.jpg"
+
+- type:""  
+  title: "Hoiho: The Rare Yellow-Eyed Forest Penguin"
+  content: "Known in Māori as the hoiho (meaning 'noise shouter' due to its shrill call), the yellow-eyed penguin is one of the rarest penguin species in the world. Nesting in coastal forests and scrub along the South Island, it is highly sensitive to habitat degradation and mammalian predators."
+  image: "https://commons.wikimedia.org/wiki/File:Yellow-eyed_Penguin_(Megadyptes_antipodes).jpg"
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+
+- type:""  
+  title: "Godfrey Bowen and the King Country Shearer Monument"
+  content: "Te Kuiti is home to a giant statue of a sheep shearer depicting Godfrey Bowen, who co-developed 'the Bowen technique' in the 1940s and 50s. This method revolutionized wool harvesting, allowing shearers to remove a fleece quickly and cleanly without harming the sheep, boosting agricultural exports."
+  image: "https://commons.wikimedia.org/wiki/File:7451_Sheep_shearing.jpg"
+
+- type:""  
+  title: "The Long-Lasting Formula of the ANZAC Biscuit"
+  content: "Popularized during World War I, ANZAC biscuits are made of rolled oats, flour, sugar, butter, golden syrup, and baking soda. Because they were baked without eggs, they did not spoil easily, allowing families to send them to soldiers serving overseas on long sea voyages."
+  image: "https://commons.wikimedia.org/wiki/File:ANZAC_biscuits_(14_April_2006).jpg"
+
+- type:""  
+  title: "Lolly Cake: The Coconut-Rolled No-Bake Sweet"
+  content: "Lolly cake is a popular home-style dessert made from crushed malt biscuits, melted butter, sweetened condensed milk, and chopped candy logs rolled in desiccated coconut. The mixture is shaped into a log, chilled, and sliced, serving as a staple sweet treat at children's birthdays and local bakeries."
+  image: "https://commons.wikimedia.org/wiki/File:Lolly_cake_(2792116118).jpg"
+
+- type:""  
+  title: "The Herbal Licorice Extract of Black Knight"
+  content: "Black Knight is a highly popular brand of black licorice manufactured in New Zealand and is famous for its soft texture and intense flavor. It is a traditional sweet treat that highlights the country's preference for classic candy profiles."
+  image: "https://thelicoriceshop.com.au/cdn/shop/files/IMG-1657_1024x1024.jpg"
+
+- type:""  
+  title: "Tangy Fruits and the Cinema Floor Tradition"
+  content: "Tangy Fruits were small, round, fruit-flavored candies that were historically sold in movie theaters across New Zealand. A common movie-going tradition involved children rolling the hard candies down the wooden sloped aisles of theaters during film screenings, creating a distinctive rattling sound."
+  image: "https://www.nzherald.co.nz/resizer/v2/2P5GXTVIKVA33CMMSKBQ6JVAME.png?auth=32fca2dbfb6495ca8340a651a1c7f28c3e98e2a943092d12eb3e48796b4ca2c5&width=1440&height=900&quality=70&smart=true"
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+
+- type:""  
+  title: "The Marshmallow Incentive of the Chocolate Fish"
+  content: "The Chocolate Fish is a popular sweet treat featuring a pink or white marshmallow fish covered in a thin layer of milk chocolate. In domestic culture, it is traditionally given as a reward or a small thank-you for a job well done, giving rise to the popular phrase, 'Give that person a chocolate fish!'"
+  image: "https://commons.wikimedia.org/wiki/File:Twochocolatefish.JPG"
+
+- type:""  
+  title: "Footrot Flats: Murray Ball’s Rural Satire"
+  content: "Created by cartoonist Murray Ball, the cartoon strip Footrot Flats offered a highly humorous look at rural farming life. The protagonist, 'Dog', along with his owner Wal Footrot, grappled with daily agricultural mishaps in the backcountry, shaping how New Zealanders viewed their rural heritage."
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW2jPYQv7Urj-nmD5n9lXOk9gIIrEeh442dDNf06_D2w&s=10"
+
+- type:""  
+  title: "Barry Crump and the Literary Good Keen Man"
+  content: "Author Barry Crump brought the phrase 'Good Keen Man' to the forefront of national culture through his rugged, humorous novels about hunting in the native bush. Crump’s stories celebrated the self-sufficient, laconic, and practical bushman archetype, contributing to the mythology of the outdoor Kiwi."
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH9e6YmbWooJDMcfWUTauo4m160IR7n1hZ1MEze2xnfw&s=10"
+
+- type:""  
+  title: "Billy T. James: Subverting the Black Singlet"
+  content: "Billy T. James was a highly influential comedian who wore a black singlet and a yellow towel draped around his neck. With a characteristic chuckle, James used sharp satire to explore relationships between Māori and Pākehā, dismantling sacred cows and bringing bicultural humor to mainstream media."
+  image: "https://media.rnztools.nz/rnz/image/upload/s--GtZnv-kN--/t_tohu-badge-twitter/v1643799183/4MC22VY_image_crop_120734?_a=BACCd2AD"
+
+- type:""  
+  title: "Aunt Daisy’s Domestic Culinary Radio Wave"
+  content: "Maud Basham, known professionally as Aunt Daisy, ruled the national radio airwaves from the 1930s to the 1950s. Her daily morning broadcasts of household hints, thrifty recipes, and general advice provided an essential domestic guide for generations of home cooks."
+  image: "https://commons.wikimedia.org/wiki/File:Aunt_Daisy.JPG"
+  
+#- type: "video"
+#  title: 
+#  content: "&autoplay=1"
+#  tag: "Classic Ad"
+#  duration: 
+
+- type:""  
+  title: "Cardigan Bay and the Million-Dollar Harness Win"
+  content: "Born in New Zealand, Cardigan Bay was a legendary harness racehorse who achieved global fame in the 1960s. He was the first harness horse in history to win over one million US dollars in prize money, becoming a source of immense national pride and a sporting icon."
+  image: "https://commons.wikimedia.org/wiki/File:Cardigan_Bay_(NZ).jpg"
+
+- type:""  
+  title: "Phar Lap: The Enormous Heart of a Champion"
+  content: "Phar Lap was a world-famous racing horse born in New Zealand in 1926 who went on to dominate the international turf. Upon his death, autopsies revealed his heart weighed an extraordinary 6.2 kilograms—far larger than a typical horse heart—cementing his status as a symbol of courage and physical power."
+  image: "https://commons.wikimedia.org/wiki/File:Phar_Lap.jpg"
+
+- type:""  
+  title: "Ernest Rutherford and spliting the Atom"
+  content: "The "father of nuclear physics," the Nelson-born Nobel laureate was the first to split the atom in 1919, fundamentally changing modern science."
+  image: "https://images.nzgeo.com/2008/11/94_rutherford2-938x1300.jpg"
