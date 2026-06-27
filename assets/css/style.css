@@ -51,7 +51,7 @@ body, html {
 .floating-logo {
   position: fixed;
   z-index: 1; /* Sits cleanly on top of the body wallpaper */
-  width: auto; 
+  width: 25px; 
   height: auto;
   opacity: 0.45; /* Subdued so it doesn't clash with text */
   pointer-events: none; 
