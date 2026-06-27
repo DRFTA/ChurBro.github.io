@@ -62,7 +62,7 @@ body, html {
   pointer-events: none; 
   
   /* 2. Changed 'alternate' to 'linear' or standard loop so it tracks smoothly around the screen */
-  animation: floatInZone 90s infinite ease-in-out;
+  animation: floatInZone 160s infinite ease-in-out;
 }
 /* Restricts movement strictly within a 20% border zone around the edges of the screen */
 @keyframes floatInZone {
