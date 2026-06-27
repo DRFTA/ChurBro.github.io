@@ -72,27 +72,27 @@ body, html {
   z-index: 2; /* Higher than the logo, so text/video stay crisp and on top */
 }
 
-/* Smooth drifting animation path */
-@keyframes floatAround {
+/* Restricts movement strictly between W:1673-2172 and H:951-1141 */
+@keyframes floatInZone {
   0% {
-    top: 15%;
-    left: 10%;
+    top: 83%;
+    left: 77%;
     transform: scale(1) rotate(0deg);
   }
   33% {
-    top: 70%;
-    left: 75%;
-    transform: scale(1.1) rotate(5deg);
+    top: 88%;
+    left: 90%;
+    transform: scale(1.05) rotate(4deg);
   }
   66% {
-    top: 40%;
-    left: 80%;
-    transform: scale(0.9) rotate(-8deg);
+    top: 92%;
+    left: 82%;
+    transform: scale(0.95) rotate(-4deg);
   }
   100% {
-    top: 75%;
-    left: 15%;
-    transform: scale(1) rotate(3deg);
+    top: 85%;
+    left: 92%;
+    transform: scale(1) rotate(2deg);
   }
 }
 
