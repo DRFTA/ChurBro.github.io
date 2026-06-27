@@ -57,6 +57,43 @@ body, html {
   gap: 10px;
 }
 
+/* Floating "Made in NZ" Background Watermark */
+.floating-logo {
+  position: fixed;
+  z-index: -1; /* Puts it behind all text and videos, but above the wallpaper */
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  opacity: 0.25; /* Keeps it subtle so it isn't distracting */
+  pointer-events: none; /* Prevents it from accidentally blocking mouse clicks */
+  
+  /* Applies the smooth floating animation */
+  animation: floatAround 45s infinite ease-in-out alternate;
+}
+
+/* Smooth drifting animation path */
+@keyframes floatAround {
+  0% {
+    top: 15%;
+    left: 10%;
+    transform: scale(1) rotate(0deg);
+  }
+  33% {
+    top: 70%;
+    left: 75%;
+    transform: scale(1.1) rotate(5deg);
+  }
+  66% {
+    top: 40%;
+    left: 80%;
+    transform: scale(0.9) rotate(-8deg);
+  }
+  100% {
+    top: 75%;
+    left: 15%;
+    transform: scale(1) rotate(3deg);
+  }
+}
+
 header {
   /* Heavy tint + blur completely diffuses the busy wallpaper background */
   background: rgba(5, 10, 8, 0.85);
