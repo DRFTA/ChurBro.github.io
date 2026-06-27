@@ -58,11 +58,11 @@ body, html {
   z-index: 1; /* Stays in front of wallpaper, behind text panels */
   width: 65px; 
   height: auto;
-  opacity: 0.7; 
+  opacity: 1; 
   pointer-events: none; 
   
   /* 2. Changed 'alternate' to 'linear' or standard loop so it tracks smoothly around the screen */
-  animation: floatInZone 80s infinite ease-in-out;
+  animation: floatInZone 90s infinite ease-in-out;
 }
 /* Restricts movement strictly within a 20% border zone around the edges of the screen */
 @keyframes floatInZone {
