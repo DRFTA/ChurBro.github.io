@@ -222,8 +222,8 @@ layout: null
     // Simplified sequential indexing instead of random deck shuffling
     let currentIndex = 0;
 
-    bgAudio.volume = 0.1;
-    slideAudio.volume = 0.1;
+    bgAudio.volume = 0.2;
+    slideAudio.volume = 0.2;
 
     window.addEventListener('click', () => {
       if (!isMuted && bgAudio.paused && slideAudio.paused && !crtOverlay.classList.contains('no-overlay')) {
@@ -282,7 +282,7 @@ layout: null
           if (item.sound) {
             bgAudio.pause();
             slideAudio.src = item.sound;
-            slideAudio.volume = 0.1;
+            slideAudio.volume = 0.2;
             slideAudio.play().catch(() => {});
           } else {
             bgAudio.volume = 0.1;
