@@ -12,7 +12,7 @@ body, html {
   background-color: var(--crt-bg);
   
   /* 📱 MOBILE FIRST: Default to portrait wallpaper */
-  background-image: url('../images/wallpaper9_16.png');
+  background-image: url('../images/wallpaper9_16kiwiana.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body, html {
 /* 🖥️ DESKTOP ENHANCEMENT: Switch to landscape wallpaper on wide screens */
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    background-image: url('../images/wallpaper16_9.png');
+    background-image: url('../images/wallpaper16_9kiwiana.png');
   }
 }
 
