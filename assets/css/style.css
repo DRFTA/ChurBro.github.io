@@ -47,7 +47,19 @@ body, html {
   opacity: 1;
 }
 
-/* Dashboard Grid Layout */
+/* Floating "Made in NZ" Background Watermark */
+.floating-logo {
+  position: fixed;
+  z-index: 1; /* Sits cleanly on top of the body wallpaper */
+  width: 120px; 
+  height: auto;
+  opacity: 0.15; /* Subdued so it doesn't clash with text */
+  pointer-events: none; 
+  
+  animation: floatAround 25s infinite ease-in-out alternate;
+}
+
+/* Force the dashboard to layer explicitly ON TOP of the floating logo */
 .dashboard {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -55,19 +67,9 @@ body, html {
   padding: 15px;
   box-sizing: border-box;
   gap: 10px;
-}
-
-/* Floating "Made in NZ" Background Watermark */
-.floating-logo {
-  position: fixed;
-  z-index: -1; /* Puts it behind all text and videos, but above the wallpaper */
-  width: 120px; /* Adjust size as needed */
-  height: auto;
-  opacity: 0.85; /* Keeps it subtle so it isn't distracting */
-  pointer-events: none; /* Prevents it from accidentally blocking mouse clicks */
   
-  /* Applies the smooth floating animation */
-  animation: floatAround 45s infinite ease-in-out alternate;
+  position: relative;
+  z-index: 2; /* Higher than the logo, so text/video stay crisp and on top */
 }
 
 /* Smooth drifting animation path */
