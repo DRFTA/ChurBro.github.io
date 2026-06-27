@@ -51,25 +51,12 @@ body, html {
 .floating-logo {
   position: fixed;
   z-index: 1; /* Sits cleanly on top of the body wallpaper */
-  width: 120px; 
+  width: auto; 
   height: auto;
   opacity: 0.45; /* Subdued so it doesn't clash with text */
   pointer-events: none; 
   
   animation: floatAround 65s infinite ease-in-out alternate;
-}
-
-/* Force the dashboard to layer explicitly ON TOP of the floating logo */
-.dashboard {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
-  padding: 15px;
-  box-sizing: border-box;
-  gap: 10px;
-  
-  position: relative;
-  z-index: 2; /* Higher than the logo, so text/video stay crisp and on top */
 }
 
 /* Restricts movement strictly between W:1673-2172 and H:951-1141 */
@@ -94,6 +81,19 @@ body, html {
     left: 92%;
     transform: scale(1) rotate(2deg);
   }
+}
+
+/* Force the dashboard to layer explicitly ON TOP of the floating logo */
+.dashboard {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  padding: 15px;
+  box-sizing: border-box;
+  gap: 10px;
+  
+  position: relative;
+  z-index: 2; /* Higher than the logo, so text/video stay crisp and on top */
 }
 
 header {
