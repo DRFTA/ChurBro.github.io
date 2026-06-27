@@ -51,35 +51,45 @@ body, html {
 .floating-logo {
   position: fixed;
   z-index: 1; /* Sits cleanly on top of the body wallpaper */
-  width: 25px; 
+  width: 65px; 
   height: auto;
-  opacity: 0.45; /* Subdued so it doesn't clash with text */
+  opacity: 0.75; /* Subdued so it doesn't clash with text */
   pointer-events: none; 
   
-  animation: floatAround 65s infinite ease-in-out alternate;
+  animation: floatAround 85s infinite ease-in-out alternate;
 }
 
-/* Restricts movement strictly between W:1673-2172 and H:951-1141 */
+/* Restricts movement strictly within a 20% border zone around the edges of the screen */
 @keyframes floatInZone {
   0% {
-    top: 83%;
-    left: 77%;
+    /* Top Left Corner Zone */
+    top: 2%;
+    left: 2%;
     transform: scale(1) rotate(0deg);
   }
-  33% {
-    top: 88%;
-    left: 90%;
-    transform: scale(1.05) rotate(4deg);
+  25% {
+    /* Top Right Edge Zone (Stays within top 20% height, far right width) */
+    top: 5%;
+    left: 85%;
+    transform: scale(1.05) rotate(5deg);
   }
-  66% {
-    top: 92%;
-    left: 82%;
-    transform: scale(0.95) rotate(-4deg);
+  50% {
+    /* Bottom Right Corner Zone (Stays within bottom 20% height, far right width) */
+    top: 85%;
+    left: 88%;
+    transform: scale(0.95) rotate(-5deg);
+  }
+  75% {
+    /* Bottom Left Edge Zone (Stays within bottom 20% height, far left width) */
+    top: 82%;
+    left: 4%;
+    transform: scale(1.1) rotate(3deg);
   }
   100% {
-    top: 85%;
-    left: 92%;
-    transform: scale(1) rotate(2deg);
+    /* Returns smoothly to the Top Left start point */
+    top: 2%;
+    left: 2%;
+    transform: scale(1) rotate(0deg);
   }
 }
 
